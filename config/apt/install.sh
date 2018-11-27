@@ -10,3 +10,4 @@ install_package "git";
 install_package "wget";
 install_package "zsh";
 install_package "curl";
+install_package "tree";
