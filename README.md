@@ -1,5 +1,7 @@
 # dotfiles
 
-To install, make sure that make is installed and pull to $HOME, cd to $HOME/.dotfiles, and make linux/osx. You will need to log out/back in in order to switch shells.
+To install, make sure that make is installed and pull to `$HOME/.dotfiles`, cd to `$HOME/.dotfiles`, and `make linux` or `make osx` depending on your os. 
 
-Note: If you have a .zshrc, it will be moved to .zshrc-backup 
+You will need to log out/back in in order to switch shells.
+
+_Note: If you have a .zshrc, it will be moved to .zshrc-backup_
