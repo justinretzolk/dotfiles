@@ -64,7 +64,7 @@ set hlsearch
 
 " NERDTree
 let g:NERDTreeShowHidden=1
-noremap <Leader>3 :NERDTreeToggle<CR> 
+noremap <Leader>3 :NERDTreeToggle<CR>
 
 " Airline
 let g:airline_theme='solarized'
@@ -74,4 +74,8 @@ let g:airline_solarized_bg='dark'
 let g:better_whitespace_enabled=1
 
 " Python
-let python_highlight_all=1
+let g:python_highlight_all=1
+
+" HashiVim
+let g:terraform_align=1                     " override default alignment to match HCL
+let g:terraform_fmt_on_save=1               " run terraform fmt on save
