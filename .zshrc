@@ -5,6 +5,17 @@
 # Theming
 ZSH_THEME="robbyrussell"
 
+# Plugins
+plugins=(
+  git,
+  terraform,
+  vagrant,
+  thefuck,
+  colored-man-pages,
+  zsh-autosuggestions,
+  zsh-syntax-highlighting
+)
+
 # Paths
 export EDITOR="vim"
 export MYVIMRC="$HOME/.dotfiles/.vimrc"
@@ -18,9 +29,6 @@ source $ZSH/oh-my-zsh.sh
 # We'll see how useful these things are...
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-
-# Plugins
-plugins=(git terraform vagrant thefuck colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
 # Aliases
 if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then
