@@ -1,3 +1,6 @@
 *.swp
 *.old
 *.backup
+.DS_Store
+._*
+**/*history*
