@@ -20,9 +20,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins
-plugins=(
-  git
-)
+plugins=(git terraform vagrant thefuck colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
 # Aliases
 if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then

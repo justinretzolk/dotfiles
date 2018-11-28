@@ -18,6 +18,7 @@ install_brew "wget";
 install_brew "zsh";
 install_brew "curl";
 install_brew "tree";
+install_brew "thefuck";
 
 # Install via cask
 install_cask "1password";
