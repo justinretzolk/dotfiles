@@ -1,7 +1,6 @@
 [submodule "vim/.vim/autoload"]
-	path 	= vim/.vim/autoload
-	url	= https://github.com/junegunn/vim-plug.git
-
+	path = vim/.vim/autoload
+	url = https://github.com/junegunn/vim-plug
 [submodule "zsh/.oh-my-zsh"]
-	path	= zsh/.oh-my-zsh
-	url	= https://github.com/robbyrussell/oh-my-zsh.git
+	path = zsh/.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh

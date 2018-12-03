@@ -1,10 +1,10 @@
-.PHONY: all osx linux homebrew homebrew-packages apt-packages osx-config linux-config vim-plug oh-my-zsh
+.PHONY: all osx linux homebrew homebrew-packages apt-packages osx-config linux-config stow
 
 all:
 
-osx: homebrew homebrew-packages vim-plug oh-my-zsh osx-config
+osx: homebrew homebrew-packages stow osx-config
 
-linux: apt-packages vim-plug oh-my-zsh linux-config
+linux: apt-packages stow linux-config
 
 homebrew:
 	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -15,11 +15,8 @@ homebrew-packages:
 apt-packages:
 	./config/apt/install.sh
 
-vim-plug:
-	./config/vim/install.sh
-
-oh-my-zsh:
-	./config/zsh/install.sh
+stow:
+	./config/stow/install.sh
 
 osx-config:
 	./config/os/osx/configure.sh
