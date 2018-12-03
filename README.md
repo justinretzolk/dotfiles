@@ -5,6 +5,7 @@ To install:
 git clone --recurse-submodules https://github.com/justinretzolk/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 make osx
+chsh -s $(which zsh)
 ```
 Replace `osx` with `linux` if using a linux based os.
 You will need to log out/back in in order to switch shells.
