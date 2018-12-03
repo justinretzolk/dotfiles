@@ -10,6 +10,7 @@ install_cask () {
 brew tap caskroom/cask
 
 # Install via brew
+install_brew "stow";
 install_brew "vim";
 install_brew "python";
 install_brew "python3";

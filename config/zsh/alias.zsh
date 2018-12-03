@@ -1,5 +1,5 @@
 # Filesystem
-alias ls="ls -lah"
+alias lsa="ls -lah"
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard'"
 
 # Docker

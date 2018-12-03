@@ -7,6 +7,7 @@ install_pip () {
 }
 
 # Install necessary packages
+install_package "stow";
 install_package "vim";
 install_package "python";
 install_package "python3";
