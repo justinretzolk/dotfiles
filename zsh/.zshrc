@@ -1,5 +1,7 @@
 # Theming
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+export DEFAULT_USER="justinretzolk"
+prompt_context()
 
 # Plugins
 plugins=(
@@ -27,3 +29,6 @@ COMPLETION_WAITING_DOTS="true"
 if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then
   source $ZSH_CONFIG_ROOT/alias.zsh
 fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault

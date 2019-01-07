@@ -34,6 +34,7 @@ call plug#end()
 " ==============================
 
 set nocompatible
+set noshowmode
 
 " Visual
 syntax enable
