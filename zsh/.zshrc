@@ -1,9 +1,7 @@
-# Leaving this for now in case I run into any issues
-# yay shell changes
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Theming
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+export DEFAULT_USER="justinretzolk"
+prompt_context()
 
 # Plugins
 plugins=(
@@ -16,10 +14,10 @@ plugins=(
 
 # Paths
 export EDITOR="vim"
+export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CONFIG_ROOT="$HOME/.dotfiles/config/zsh"
 
 # Load oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # We'll see how useful these things are...
@@ -32,5 +30,5 @@ if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then
   source $ZSH_CONFIG_ROOT/alias.zsh
 fi
 
-# ssh -- will experiment with this at a later date
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
