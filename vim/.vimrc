@@ -40,7 +40,8 @@ set noshowmode
 syntax enable
 filetype plugin indent on
 set ruler
-set number
+set relativenumber
+set tw=80
 set softtabstop=2
 set shiftwidth=2
 set expandtab
@@ -51,10 +52,14 @@ silent! colorscheme solarized
 
 " Behavior
 let mapleader=','
-set noerrorbells                            " please shut up
-set backspace=indent,eol,start              " make backspace useful
+set noerrorbells
+set backspace=indent,eol,start
 set incsearch
 set hlsearch
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 " NERDTree
 let g:NERDTreeShowHidden=1
