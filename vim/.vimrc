@@ -66,7 +66,7 @@ let g:NERDTreeShowHidden=1
 noremap <Leader>3 :NERDTreeToggle<CR> 
 
 " Airline
-let g:airline_theme='solarized'
+let g:AirlineTheme='solarized'
 let g:airline_solarized_bg='dark'
 
 " vim-better-whitespace
