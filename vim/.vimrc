@@ -63,7 +63,8 @@ noremap <Right> <NOP>
 
 " NERDTree
 let g:NERDTreeShowHidden=1
-noremap <Leader>3 :NERDTreeToggle<CR> 
+noremap <Leader>1 :NERDTreeToggle<CR>
+noremap <leader>2 :NERDTreeFocus<CR>
 
 " Airline
 let g:AirlineTheme='solarized'
