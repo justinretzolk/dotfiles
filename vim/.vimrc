@@ -41,13 +41,14 @@ syntax enable
 filetype plugin indent on
 set ruler
 set relativenumber
-set tw=80
+set wrap
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
 set background=dark
+set modifiable
 silent! colorscheme solarized
 
 " Behavior
