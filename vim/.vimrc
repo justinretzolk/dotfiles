@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 
 "" Theming
-Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -16,16 +15,11 @@ Plug 'ntpeters/vim-better-whitespace'
 
 "" Autocomplete
 Plug 'tpope/vim-endwise'
-Plug 'ervandew/supertab'
 
 "" HashiCorp
 Plug 'hashivim/vim-terraform', { 'for': 'hcl' }
 Plug 'juliosueiras/vim-terraform-completion', { 'for': 'hcl' }
 Plug 'fatih/vim-hclfmt'
-
-"" Python
-Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
-Plug 'nvie/vim-flake8', { 'for': 'python' }
 
 call plug#end()
 
@@ -47,9 +41,8 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
-set background=dark
 set modifiable
-silent! colorscheme solarized
+silent! colorscheme "Tomorrow-Night"
 
 " Behavior
 let mapleader=','
@@ -68,11 +61,7 @@ noremap <Leader>1 :NERDTreeToggle<CR>
 noremap <leader>2 :NERDTreeFocus<CR>
 
 " Airline
-let g:AirlineTheme='solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_theme='minimalist'
 
 " vim-better-whitespace
 let g:better_whitespace_enabled=1
-
-" Python
-let python_highlight_all=1
