@@ -2,6 +2,9 @@
 *.old
 *.backup
 .DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
 ._*
 **/*history*
 **work*
