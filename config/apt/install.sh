@@ -18,6 +18,7 @@ install_package "wget";
 install_package "zsh";
 install_package "curl";
 install_package "tree";
+install_package "jq";
 
 # pip install
 install_pip "--upgrade setuptools";

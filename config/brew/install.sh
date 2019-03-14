@@ -20,6 +20,7 @@ install_brew "zsh";
 install_brew "curl";
 install_brew "tree";
 install_brew "thefuck";
+install_brew "jq";
 
 # Install via cask
 install_cask "1password";
