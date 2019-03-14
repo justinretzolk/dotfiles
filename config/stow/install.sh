@@ -8,7 +8,10 @@ init_stow () {
 	stow $1;
 }
 
+echo "Backing up existing '.zshrc'"
 backup_config ".zshrc";
+
+echo "Backing up existing '.vimrc'"
 backup_config ".vimrc";
 
 init_stow "vim";
