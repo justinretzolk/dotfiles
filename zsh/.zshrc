@@ -10,14 +10,18 @@ plugins=(
   vagrant,
   thefuck,
   colored-man-pages
+  zsh-syntax-highlighting
 )
 
-# Paths
+# Settings defaults
 export EDITOR="vim"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CONFIG_ROOT="$HOME/.dotfiles/config/zsh"
+
+# Go settings
 export GOPATH="${HOME}/.go"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export PATH="$PATH:${GOPATH}/bin"
+
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -25,12 +29,12 @@ source $ZSH/oh-my-zsh.sh
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-
-# Aliases
+# Standard aliases
 if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then
   source $ZSH_CONFIG_ROOT/alias.zsh
 fi
 
+# Work specific aliases
 if [ -f $ZSH_CONFIG_ROOT/work-alias.zsh ]; then
   source $ZSH_CONFIG_ROOT/work-alias.zsh
 fi

@@ -20,6 +20,7 @@ Plug 'tpope/vim-endwise'
 Plug 'hashivim/vim-terraform', { 'for': 'hcl' }
 Plug 'juliosueiras/vim-terraform-completion', { 'for': 'hcl' }
 Plug 'fatih/vim-hclfmt'
+Plug 'hashicorp/sentinel.vim'
 
 call plug#end()
 
