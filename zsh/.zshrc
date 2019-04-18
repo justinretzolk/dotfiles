@@ -16,7 +16,7 @@ plugins=(
 # Settings defaults
 export EDITOR="vim"
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CONFIG_ROOT="$HOME/.dotfiles/config/zsh"
+export ZSH_CONFIG_ROOT="$HOME/.dotfiles/zsh/extras"
 
 # Go settings
 export GOPATH="${HOME}/.go"
