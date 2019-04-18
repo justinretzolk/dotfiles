@@ -26,7 +26,7 @@ brew:
 	brew bundle --file=$(DOTFILES_DIR)/config/macos/Brewfile
 
 apt:
-	$(DOTFILES_DIR)/config/linux/apt.sh
+	bash $(DOTFILES_DIR)/config/linux/apt.sh
 
 stow:
 	stow vim
