@@ -1,25 +1,34 @@
-.PHONY: all osx linux homebrew homebrew-packages apt-packages osx-config linux-config stow
+DOTFILES_DIR := $(shell echo $HOME/.dotfiles)
+UNAME := $(shell uname -s)
 
-all:
+ifeq ($(UNAME), Darwin)
+  	OS := macos
+else ifeq ($(UNAME), Linux)
+  	OS := linux
+endif
 
-osx: homebrew homebrew-packages stow osx-config
+all: install
 
-linux: apt-packages stow linux-config
+install: $(OS)
 
-homebrew:
+.PHONY: macos linux
+
+macos: brew stow
+	bash $(DOTFILES_DIR)/config/macos/defaults.sh
+
+linux: apt stow
+	bash $(DOTFILES_DIR)/config/linux/defaults.sh
+
+.PHONY: brew apt stow
+
+brew:
 	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew bundle --file=$(DOTFILES_DIR)/config/macos/Brewfile
 
-homebrew-packages:
-	./config/brew/install.sh
-
-apt-packages:
-	./config/apt/install.sh
+apt:
+	bash $(DOTFILES_DIR)/config/linux/apt.sh
 
 stow:
-	./config/stow/install.sh
-
-osx-config:
-	./config/os/osx/configure.sh
-
-linux-config:
-	./config/os/linux/configure.sh
+	stow vim
+	stow git
+	stow zsh

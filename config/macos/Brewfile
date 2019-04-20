@@ -1,0 +1,27 @@
+# Tap
+tap "caskroom/cask"
+
+# Brew
+brew "stow"
+brew "vim"
+brew "python"
+brew "python3"
+brew "git"
+brew "wget"
+brew "zsh"
+brew "curl"
+brew "tree"
+brew "thefuck"
+brew "jq"
+brew "zsh-completions"
+
+# Cask
+cask "1password"
+cask "slack"
+cask "iterm2"
+cask "docker"
+cask "spotify"
+cask "appcleaner"
+cask "caffeine"
+cask "virtualbox"
+casl "vagrant"
