@@ -66,3 +66,10 @@ let g:airline_theme='minimalist'
 
 " vim-better-whitespace
 let g:better_whitespace_enabled=1
+
+" Vagrantfile syntax highlighting the hard way
+" https://github.com/hashicorp/vagrant/blob/master/contrib/vim/vagrantfile.vim
+augroup vagrant
+  au!
+  au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
