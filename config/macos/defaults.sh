@@ -1,3 +1,6 @@
+# Close System Preferences just in case
+osascript -e 'tell application "System Preferences" to quit'
+
 ###############################################################################
 ##  General UI/UX                                                            ##
 ###############################################################################
@@ -14,8 +17,11 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Set dark theme
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
+
 ###############################################################################
-##  Screen                                                                   ##
+##  Screenshots                                                              ##
 ###############################################################################
 
 # Save screenshots to the desktop
@@ -64,3 +70,16 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+###############################################################################
+## iTerm 2                                                                   ##
+###############################################################################
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/config/macos/iterm/"
+
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# Don’t display prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
