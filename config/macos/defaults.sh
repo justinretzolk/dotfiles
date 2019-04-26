@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Close System Preferences just in case
 osascript -e 'tell application "System Preferences" to quit'
 
