@@ -1070,11 +1070,11 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/config/macos/iterm</string>
+	<string>~/Downloads/tomorrow-theme-master/iTerm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1107,17 +1107,19 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>626 110 545 419 0 0 1440 877 </string>
+	<string>929 140 638 232 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>392 363 620 392 0 0 1440 877 </string>
+	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 126 606 469 0 0 1440 877 </string>
+	<string>269 126 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>454 380 796 486 0 0 1440 877 </string>
+	<string>573 408 918 512 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 314 570 427 0 0 1440 877 </string>
+	<string>187 241 990 571 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1569 848 585 427 -1920 394 1920 1057 </string>
+	<string>302 322 570 427 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>21 533 570 452 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_87EDF60E-B645-4A42-AE7A-C1F64D6D3C6A</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_87EDF60E-B645-4A42-AE7A-C1F64D6D3C6A_selection</key>
@@ -1356,7 +1358,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1759,16 +1761,31 @@
 	</array>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>C2290A1E-71BD-4BE6-81DC-F27302CE0F3E</string>
+	<string>D7FECB2B-33A5-44AC-A589-BE6F84964B58</string>
+	<key>NoSyncLastTipTime</key>
+	<real>557593514.72199702</real>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>563390840.44799399</real>
+	<real>537069385.63436997</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PointerActions</key>
@@ -1805,19 +1822,21 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/justinretzolk/.dotfiles/config/macos/iterm</string>
+	<string>~/.dotfiles/config/macos/iterm/</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=73</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=48</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-26T22:00:48Z</date>
+	<date>2019-04-27T16:35:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
