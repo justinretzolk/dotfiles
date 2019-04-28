@@ -22,7 +22,7 @@ linux: apt stow
 .PHONY: brew apt stow
 
 brew:
-	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/usr/bin/ruby -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew bundle --file=$(DOTFILES_DIR)/config/macos/Brewfile
 
 apt:
