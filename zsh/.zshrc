@@ -40,8 +40,7 @@ if [ -f $ZSH_CONFIG_ROOT/work-alias.zsh ]; then
 fi
 
 # HashiCorp Autocomplete
+autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 complete -o nospace -C /usr/local/Cellar/terraform/0.11.13/bin/terraform terraform
 
-# TODO: Figure out what the hell these were for...
-autoload -U +X bashcompinit && bashcompinit
