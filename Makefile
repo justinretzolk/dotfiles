@@ -1,4 +1,4 @@
-DOTFILES_DIR := $(shell echo $HOME/.dotfiles)
+DOTFILES_DIR = $(shell echo $(HOME)/.dotfiles)
 UNAME := $(shell uname -s)
 
 ifeq ($(UNAME), Darwin)
@@ -22,7 +22,7 @@ linux: apt stow
 .PHONY: brew apt stow
 
 brew:
-	is-executable brew --version || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
+	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
 	brew bundle --file=$(DOTFILES_DIR)/config/macos/Brewfile
 
 apt:
