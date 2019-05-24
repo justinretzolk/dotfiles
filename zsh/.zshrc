@@ -25,10 +25,6 @@ export PATH="$PATH:${GOPATH}/bin"
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# We'll see how useful these things are...
-ENABLE_CORRECTION="true"
-COMPLETION_WAITING_DOTS="true"
-
 # Standard aliases
 if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then
   source $ZSH_CONFIG_ROOT/alias.zsh

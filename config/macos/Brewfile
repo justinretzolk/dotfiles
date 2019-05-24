@@ -2,6 +2,7 @@ cask_args appdir: "~/Applications"
 
 # Tap
 tap 'caskroom/cask'
+tap 'homebrew/cask-drivers'
 
 # Brew
 brew 'stow'
@@ -29,3 +30,4 @@ cask 'virtualbox'
 cask 'vagrant'
 cask 'terraform'
 cask 'packer'
+cask 'logitech-options'
