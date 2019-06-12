@@ -3,6 +3,7 @@ cask_args appdir: "~/Applications"
 # Tap
 tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
+tap 'khanhas/tap'
 
 # Brew
 brew 'stow'
@@ -17,6 +18,7 @@ brew 'tree'
 brew 'thefuck'
 brew 'jq'
 brew 'zsh-completions'
+brew 'fzf'
 
 # Cask
 cask '1password'
@@ -31,3 +33,6 @@ cask 'vagrant'
 cask 'terraform'
 cask 'packer'
 cask 'logitech-options'
+
+# Visual stuff
+brew 'spicetify-cli'
