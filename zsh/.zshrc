@@ -19,7 +19,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CONFIG_ROOT="$HOME/.dotfiles/zsh/extras"
 
 # Go settings
-export GOPATH="${HOME}/go"
+export GOPATH="${HOME}/.go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 
