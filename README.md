@@ -10,5 +10,5 @@ chsh -s $(which zsh)
 
 ### TODO:
 
--[ ] Global `.gitignore`
--[ ] Add spicetify configuration, potentially as an optional `make` flag
+- [ ] Global `.gitignore`
+- [ ] Add spicetify configuration, potentially as an optional `make` flag
