@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 ### To install:
 ```bash
@@ -8,7 +8,7 @@ make install
 chsh -s $(which zsh)
 ```
 
-### TODO
+### TODO:
 
 -[ ] Global `.gitignore`
 -[ ] Add spicetify configuration, potentially as an optional `make` flag
