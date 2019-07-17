@@ -8,8 +8,7 @@ plugins=(
   git,
   terraform,
   vagrant,
-  thefuck,
-  colored-man-pages
+  colored-man-pages,
   zsh-syntax-highlighting
 )
 
