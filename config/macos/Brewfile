@@ -33,6 +33,7 @@ cask 'vagrant'
 cask 'terraform'
 cask 'packer'
 cask 'logitech-options'
+cask 'firefox'
 
 # Visual stuff
 brew 'spicetify-cli'
