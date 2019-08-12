@@ -43,6 +43,7 @@ set expandtab
 set autoindent
 set smartindent
 set modifiable
+set spell spelllang=en_us
 silent! colorscheme "Tomorrow-Night"
 
 " Behavior
