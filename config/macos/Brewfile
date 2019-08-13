@@ -18,8 +18,6 @@ brew 'tree'
 brew 'jq'
 brew 'zsh-completions'
 brew 'fzf'
-brew 'packer'
-# brew 'terraform' #commenting this out until I'm fully migrated to 0.12 syntax
 
 # Cask
 cask '1password'
