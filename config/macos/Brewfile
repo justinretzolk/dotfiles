@@ -4,6 +4,7 @@ cask_args appdir: "~/Applications"
 tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
 tap 'khanhas/tap'
+tap 'warrensbox/tap'
 
 # Brew
 brew 'stow'
@@ -18,6 +19,8 @@ brew 'tree'
 brew 'jq'
 brew 'zsh-completions'
 brew 'fzf'
+brew 'tfswitch'
+brew 'packer'
 
 # Cask
 cask '1password'
