@@ -2,6 +2,12 @@
   name = justinretzolk
   email = jretzolk@hashicorp.com
 
+[credential]
+  helper = osxkeychain
+
+[core]
+  excludes = ~/.dotfiles/git/.gitignore_global
+
 [alias]
   amend = commit --amend
   aa = add -A
@@ -36,6 +42,3 @@
   lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
   fl = log -u
   # }}}
-
-[credential]
-  helper = osxkeychain
