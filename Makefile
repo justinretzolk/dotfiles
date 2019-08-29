@@ -32,3 +32,6 @@ stow:
 	stow vim
 	stow git
 	stow zsh
+
+# TODO
+# - Add automation for installing https://github.com/binaryplease/base16-universal-manager

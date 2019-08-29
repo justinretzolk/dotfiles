@@ -43,7 +43,7 @@ set expandtab
 set autoindent
 set smartindent
 set modifiable
-silent! colorscheme "Tomorrow-Night"
+" silent! colorscheme "Tomorrow-Night"
 
 " Behavior
 let mapleader=','
