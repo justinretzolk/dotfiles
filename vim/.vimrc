@@ -3,7 +3,7 @@
 " ==============================
 call plug#begin('~/.vim/plugged')
 
-""  Navigation
+"" Navigation
 Plug 'scrooloose/nerdtree'
 
 "" Theming
@@ -15,6 +15,9 @@ Plug 'ntpeters/vim-better-whitespace'
 
 "" Autocomplete
 Plug 'tpope/vim-endwise'
+
+"" LaTeX
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 "" HashiCorp
 Plug 'hashivim/vim-terraform', { 'for': 'hcl' }
@@ -73,3 +76,7 @@ augroup vagrant
   au!
   au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
+
+" vim-latex-preview
+autocmd Filetype tex setl updatetime=1
+let g:livepreview_previewer = 'open -a Preview'
