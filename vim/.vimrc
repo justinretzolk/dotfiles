@@ -78,5 +78,6 @@ augroup vagrant
 augroup END
 
 " vim-latex-preview
-autocmd Filetype tex setl updatetime=1
+autocmd Filetype tex setl updatetime=5
 let g:livepreview_previewer = 'open -a Preview'
+let g:livepreview_engine = 'xelatex'
