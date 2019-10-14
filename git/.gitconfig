@@ -8,6 +8,9 @@
 [core]
   excludes = ~/.dotfiles/git/.gitignore_global
 
+[diff]
+  noprefix = true
+
 [alias]
   amend = commit --amend
   aa = add -A
