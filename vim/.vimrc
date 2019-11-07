@@ -46,6 +46,8 @@ set expandtab
 set autoindent
 set smartindent
 set modifiable
+set mouse=a
+set tw=80
 " silent! colorscheme "Tomorrow-Night"
 
 " Behavior

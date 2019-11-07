@@ -1,5 +1,5 @@
 # Theming
-ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 export DEFAULT_USER="justinretzolk"
 prompt_context()
 
@@ -16,6 +16,7 @@ plugins=(
 export EDITOR="vim"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CONFIG_ROOT="$HOME/.dotfiles/zsh/extras"
+export ZSH_CUSTOM="$HOME/.dotfiles/zsh/custom"
 
 # Go settings
 export GOPATH="${HOME}/.go"
@@ -38,5 +39,5 @@ fi
 # HashiCorp Autocomplete
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
-complete -o nospace -C /usr/local/Cellar/terraform/0.11.13/bin/terraform terraform
+complete -o nospace -C /usr/local/bin/terraform terraform
 
