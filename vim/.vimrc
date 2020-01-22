@@ -64,8 +64,9 @@ map <C-l> <C-w>l
 
 " scrooloose/nerdtree
 let g:NERDTreeShowHidden=1            " nerdtree closed on launch
-noremap <Leader>1 :NERDTreeToggle<CR> " toggles nerdtree on/off
-noremap <leader>2 :NERDTreeFocus<CR>  " toggles nerdtree focus
+" toggle and focus mapping
+noremap <Leader>1 :NERDTreeToggle<CR>
+noremap <leader>2 :NERDTreeFocus<CR>
 
 " vim-airline/vim-airline-theme
 let g:airline_theme='minimalist'      " airline theme
