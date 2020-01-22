@@ -25,6 +25,7 @@ set cursorline                        " underline the current line
 set autoindent                        " indent based on the previous line
 set smartindent                       " indent based on syntax
 set relativenumber                    " use relative line numbers
+set number                            " show the line number of current line
 set wrap                              " wrap lines by default
 set softtabstop=2                     " number of spaces tab uses
 set shiftwidth=2                      " number of spaces to use for indent
@@ -42,16 +43,21 @@ silent! colorscheme "Tomorrow-Night"  " colorscheme
 " Behavior
 " ---
 
-noremap <Up> <NOP>                  " disable up key in normal mode
-noremap <Down> <NOP>                " disable down key in normal mode
-noremap <Left> <NOP>                " disable left key in normal mode
-noremap <Right> <NOP>               " disable right key in normal mode
-noremap <Leader>h :<C-u>split<CR>   " easier horizontal splitting
-noremap <Leader>v :<C-u>vsplit<CR>  " easier vertical splitting
-map <C-h> <C-w>h                    " easier navigation between splits
-map <C-j> <C-w>j                    " easier navigation between splits
-map <C-k> <C-w>k                    " easier navigation between splits
-map <C-l> <C-w>l                    " easier navigation between splits
+" disable direction keys in normal mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" easier splitting
+noremap <Leader>h :<C-u>split<CR>
+noremap <Leader>v :<C-u>vsplit<CR>
+
+" easier navigation between splits
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Plugin Configuration
 " ---
