@@ -79,6 +79,3 @@ augroup vagrant
   au!
   au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
-
-" hashivim/vim-terraform
-let g:terraform_fmt_on_save = 1       " run `terraform fmt` on save
