@@ -25,9 +25,8 @@ plugins=(
 
 # env
 export EDITOR="vim"
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CONFIG_ROOT="$HOME/.dotfiles/zsh/extras"
-export ZSH_CUSTOM="$HOME/.dotfiles/zsh/custom"
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 export DEFAULT_USER="justinretzolk"
 
 # Go
@@ -37,16 +36,6 @@ export PATH="${GOBIN}:${PATH}"
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
-# Standard aliases
-if [ -f $ZSH_CONFIG_ROOT/alias.zsh ]; then
-  source $ZSH_CONFIG_ROOT/alias.zsh
-fi
-
-# Work specific aliases
-if [ -f $ZSH_CONFIG_ROOT/work-alias.zsh ]; then
-  source $ZSH_CONFIG_ROOT/work-alias.zsh
-fi
 
 # HashiCorp Autocomplete
 autoload -U +X bashcompinit && bashcompinit

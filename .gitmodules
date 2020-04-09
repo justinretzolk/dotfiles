@@ -5,6 +5,10 @@
 [submodule "oh-my-zsh"]
   path  = zsh/.oh-my-zsh
   url   = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "zsh/custom/spaceship-prompt"]
-	path = zsh/custom/spaceship-prompt
-	url = https://github.com/denysdovhan/spaceship-prompt.git
+
+[submodule "spaceship-prompt"]
+  path  = zsh/custom/themes
+  url   = https://github.com/denysdovhan/spaceship-prompt.git
+[submodule "zsh/custom/themes/spaceship-prompt"]
+	path = zsh/custom/themes/spaceship-prompt
+	url = https://github.com/denysdovhan/spaceship-prompt
