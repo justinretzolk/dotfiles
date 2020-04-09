@@ -1,7 +1,7 @@
-# Theme
+# theme
 ZSH_THEME="spaceship"
 
-# Spaceship
+# theme customization
 export SPACESHIP_PROMPT_ADD_NEWLINE=false
 export SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=true
 export SPACESHIP_PROMPT_DEFAULT_PREFIX="using "
@@ -15,7 +15,7 @@ export SPACESHIP_DOCKER_SYMBOL="docker "
 export SPACESHIP_AWS_SYMBOL="aws "
 export SPACESHIP_TERRAFORM_SYMBOL="terraform "
 
-# zsh Plugins
+# plugins
 plugins=(
   git
   terraform
@@ -25,16 +25,16 @@ plugins=(
 
 # env
 export EDITOR="vim"
-export ZSH=$HOME/.oh-my-zsh
-export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 export DEFAULT_USER="justinretzolk"
 
-# Go
+# go
 export GOPATH="${HOME}/.go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 
-# Load oh-my-zsh
+# oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 source $ZSH/oh-my-zsh.sh
 
 # HashiCorp Autocomplete
