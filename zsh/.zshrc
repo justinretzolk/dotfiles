@@ -33,8 +33,8 @@ export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 
 # oh-my-zsh
-export ZSH=$HOME/.oh-my-zsh
-export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$HOME/.dotfiles/zsh/custom"
 source $ZSH/oh-my-zsh.sh
 
 # HashiCorp Autocomplete
