@@ -7,8 +7,3 @@ cd ~/.dotfiles
 make install
 chsh -s $(which zsh)
 ```
-
-### TODO:
-
-- [ ] Global `.gitignore`
-- [ ] Add spicetify configuration, potentially as an optional `make` flag
