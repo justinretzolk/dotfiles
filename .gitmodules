@@ -9,3 +9,7 @@
 [submodule "spaceship-prompt"]
   path  = zsh/custom/themes/spaceship-prompt
   url   = https://github.com/denysdovhan/spaceship-prompt.git
+
+[submodule "zsh-abbr"]
+  path = zsh/custom/plugins/zsh-abbr
+  url  = https://github.com/olets/zsh-abbr.git

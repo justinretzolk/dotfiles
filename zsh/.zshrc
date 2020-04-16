@@ -21,6 +21,7 @@ plugins=(
   terraform
   vagrant
   colored-man-pages
+  zsh-abbr
 )
 
 # env
@@ -35,6 +36,9 @@ export PATH="${GOBIN}:${PATH}"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.dotfiles/zsh/custom"
 source $ZSH/oh-my-zsh.sh
+
+# zsh-abbr
+export ZSH_ABBR_USER_PATH="${ZSH_CUSTOM}/abbreviations"
 
 # HashiCorp Autocomplete
 autoload -U +X bashcompinit && bashcompinit
