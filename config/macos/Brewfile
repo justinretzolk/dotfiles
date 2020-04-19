@@ -3,7 +3,6 @@ cask_args appdir: "~/Applications"
 # Tap
 tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
-tap 'khanhas/tap'
 tap 'warrensbox/tap'
 
 # Brew
@@ -34,6 +33,3 @@ cask 'virtualbox'
 cask 'vagrant'
 cask 'logitech-options'
 cask 'firefox'
-
-# Visual stuff
-brew 'spicetify-cli'
