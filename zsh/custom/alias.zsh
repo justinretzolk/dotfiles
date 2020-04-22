@@ -2,6 +2,7 @@
 alias l="ls -lAh"
 alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard'"
 alias pbc="pbcopy <"
+alias reload="source ~/.zshrc"
 
 # work
 alias bundle='cd ~/Downloads/; process-bundle ~/HashiCorp/support-bundles/; cd ~/HashiCorp/support-bundles/'
