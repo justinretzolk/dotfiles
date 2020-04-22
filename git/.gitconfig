@@ -10,38 +10,3 @@
 
 [diff]
   noprefix = true
-
-[alias]
-  amend = commit --amend
-  aa = add -A
-  alias = config --get-regexp ^alias\\.
-  br = branch
-  bD = branch -D
-  cl = clone
-  cam = commit -a -m
-  cm = commit -m
-  cb = checkout -b
-  co = checkout
-  cp = cherry-pick
-  demit = reset --soft HEAD^1
-  df = diff
-  dfa = diff --ignore-submodules
-  dfc = diff --cached HEAD^
-  dfw = diff --word-diff --word-diff-regex="[[:alnum:]_]+|[^[:space:]]"
-  prev = diff HEAD^1
-  prune = fetch --prune --all
-  sa = stash apply
-  sp = stash pop
-  sl = stash list
-  ss = stash save
-  sdiff = diff --staged
-  st = status -sb
-  sta = status -sb --ignore-submodules
-  unstage = reset HEAD --
-  # log commands {{{
-  ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-  lc  = "!f() { git ll "$1"^.."$1"; }; f"
-  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-  fl = log -u
-  # }}}
