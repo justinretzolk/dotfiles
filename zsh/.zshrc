@@ -4,14 +4,12 @@ ZSH_THEME="spaceship"
 # plugins
 plugins=(
   colored-man-pages
-  copydir
-  copyfile
   git
   ripgrep
   terraform
   vagrant
   vagrant-prompt
-  vi-mode
+  web-search
   z
   zsh-interactive-cd
   zsh-abbr
