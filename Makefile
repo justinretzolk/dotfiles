@@ -14,19 +14,19 @@ install: $(OS)
 .PHONY: macos linux
 
 macos: brew stow
-	bash $(DOTFILES_DIR)/config/macos/defaults.sh
+	bash $(DOTFILES_DIR)/os/macos/defaults.sh
 
 linux: apt stow
-	bash $(DOTFILES_DIR)/config/linux/defaults.sh
+	bash $(DOTFILES_DIR)/os/linux/defaults.sh
 
 .PHONY: brew apt stow
 
 brew:
 	which brew > /dev/null && echo "Homebrew is already installed." || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
-	brew bundle --file=$(DOTFILES_DIR)/config/macos/Brewfile
+	brew bundle --file=$(DOTFILES_DIR)/os/macos/Brewfile
 
 apt:
-	bash $(DOTFILES_DIR)/config/linux/apt.sh
+	bash $(DOTFILES_DIR)/os/linux/apt.sh
 
 stow:
 	stow vim

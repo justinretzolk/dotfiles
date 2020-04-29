@@ -1076,15 +1076,15 @@
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LeftTabBarWidth</key>
-	<real>150</real>
+	<real>255</real>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/config/macos/iterm</string>
+	<string>~/.dotfiles/os/macos/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1130,6 +1130,8 @@
 	<string>0 119 224 275 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>469 199 545 151 0 0 1440 877 </string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>320 321 799 448 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 704 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -1139,7 +1141,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>454 324 918 514 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>31 79 1406 760 0 0 1440 877 </string>
+	<string>31 439 720 400 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>90 262 720 379 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_87EDF60E-B645-4A42-AE7A-C1F64D6D3C6A</key>
@@ -1404,6 +1406,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -1752,7 +1756,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Status Bar Layout</key>
@@ -1866,13 +1870,13 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2</string>
-		<string>3.2.9</string>
-		<string>3.3.9</string>
-		<string>3.3.4</string>
-		<string>3.3.7</string>
-		<string>3.3.3</string>
 		<string>3.3.6</string>
+		<string>3.3.3</string>
+		<string>3.3.7</string>
+		<string>3.3.9</string>
+		<string>3.2.9</string>
+		<string>3.3.2</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -1893,7 +1897,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>C2290A1E-71BD-4BE6-81DC-F27302CE0F3E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>23</integer>
+	<integer>24</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -2684,7 +2688,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/justinretzolk/.dotfiles/config/macos/iterm</string>
+	<string>/Users/justinretzolk/.dotfiles/os/macos/iterm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2698,7 +2702,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-10T15:34:15Z</date>
+	<date>2020-04-29T15:32:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
