@@ -9,3 +9,4 @@
 **/*history*
 **work*
 vim/.vim/plugged/*
+config/.config/nvim/plugged

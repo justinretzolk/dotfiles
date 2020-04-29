@@ -1,7 +1,8 @@
-" Plugins
+" ---
+"  vim-plug
 " ---
 
-call plug#begin('~/.vim/plugged')
+call plug#begin("~/.config/nvim/plugged")
 Plug 'scrooloose/nerdtree'                                      " tree style directory navigation
 Plug 'vim-airline/vim-airline'                                  " status line
 Plug 'vim-airline/vim-airline-themes'                           " themes for status line
@@ -14,35 +15,34 @@ Plug 'elzr/vim-json'                                            " syntax highlig
 call plug#end()
 
 " ---
-" Settings
+"  basic settings
 " ---
 
-let mapleader=','                     " remap leader
-set backspace=indent,eol,start        " allow real backspacing
-set nocompatible                      " make it viM
-set nobackup                          " don't use a backup file
-set colorcolumn=81,121                " highlight columns
-set cursorline                        " underline the current line
-set autoindent                        " indent based on the previous line
-set smartindent                       " indent based on syntax
-set relativenumber                    " use relative line numbers
-set number                            " show the line number of current line
-set wrap                              " wrap lines by default
-set softtabstop=2                     " number of spaces tab uses
-set shiftwidth=2                      " number of spaces to use for indent
-set expandtab                         " use spaces instead of tabs
-set modifiable                        " allow modifying a ro file (for NERDTree)
-set mouse=a                           " allow mouse selection via visual mode
-set clipboard=unnamed                 " yank to macOS clipboard
-set noerrorbells                      " don't yell at me
-set incsearch                         " show searches while typing
-set hlsearch                          " highlight searches
-set ignorecase                        " ignore cases
-set smartcase                         " override ignorecase when searching with a caps
-silent! colorscheme "Tomorrow-Night"  " colorscheme
+syntax enable				" enable syntax highlighting
+let mapleader=','                     	" remap leader
+set backspace=indent,eol,start        	" allow real backspacing
+set nocompatible                      	" make it viM
+set nobackup                          	" don't use a backup file
+set colorcolumn=81,121                	" highlight columns
+set cursorline                        	" underline the current line
+set autoindent                        	" indent based on the previous line
+set smartindent                       	" indent based on syntax
+set relativenumber                    	" use relative line numbers
+set number                            	" show the line number of current line
+set wrap                              	" wrap lines by default
+set softtabstop=2                    	" number of spaces tab uses
+set shiftwidth=2                      	" number of spaces to use for indent
+set expandtab                         	" use spaces instead of tabs
+set modifiable                        	" allow modifying a ro file (for NERDTree)
+set clipboard=unnamed                 	" yank to macOS clipboard
+set noerrorbells                      	" don't yell at me
+set incsearch                         	" show searches while typing
+set hlsearch                          	" highlight searches
+set ignorecase                        	" ignore cases
+set smartcase                         	" override ignorecase when searching with a caps
 
 " ---
-" Behavior
+"  behavior
 " ---
 
 " disable direction keys in normal mode
@@ -68,7 +68,7 @@ augroup vagrant
 augroup END
 
 " ---
-" Plugin Configuration
+"  plugin configuration
 " ---
 
 " scrooloose/nerdtree
@@ -87,3 +87,4 @@ let g:airline_theme='minimalist'
 " ---
 " enable better whitespace
 let g:better_whitespace_enabled=1
+
