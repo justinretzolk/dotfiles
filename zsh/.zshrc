@@ -5,7 +5,6 @@ ZSH_THEME="spaceship"
 plugins=(
   colored-man-pages
   git
-  ripgrep
   terraform
   vagrant
   vagrant-prompt
@@ -19,6 +18,7 @@ plugins=(
 
 # env
 export EDITOR="vim"
+export CONFIG_PATH="${HOME}/.config"
 
 # go
 export GOPATH="${HOME}/.go"
@@ -29,6 +29,9 @@ export PATH="${GOBIN}:${PATH}"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.dotfiles/zsh/custom"
 source $ZSH/oh-my-zsh.sh
+
+# ripgrep
+export RIPGREP_CONFIG_PATH="${CONFIG_PATH}/rg/.ripgreprc"
 
 # HashiCorp Autocomplete
 autoload -U +X bashcompinit && bashcompinit
