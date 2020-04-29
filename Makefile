@@ -29,6 +29,6 @@ apt:
 	bash $(DOTFILES_DIR)/os/linux/apt.sh
 
 stow:
-	stow vim
+	stow config
 	stow git
 	stow zsh

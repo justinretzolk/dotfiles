@@ -1,3 +1,4 @@
+abbr vim="nvim"
 abbr terrafrom="terraform"
 abbr tf="terraform"
 abbr tfa="terraform apply"
