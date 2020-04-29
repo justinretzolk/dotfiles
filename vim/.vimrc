@@ -13,6 +13,7 @@ Plug 'hashicorp/sentinel.vim'                                   " syntax highlig
 Plug 'elzr/vim-json'                                            " syntax highlighting for json
 call plug#end()
 
+" ---
 " Settings
 " ---
 
@@ -40,6 +41,7 @@ set ignorecase                        " ignore cases
 set smartcase                         " override ignorecase when searching with a caps
 silent! colorscheme "Tomorrow-Night"  " colorscheme
 
+" ---
 " Behavior
 " ---
 
@@ -59,23 +61,29 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Plugin Configuration
-" ---
-
-" scrooloose/nerdtree
-let g:NERDTreeShowHidden=1            " nerdtree closed on launch
-" toggle and focus mapping
-noremap <Leader>1 :NERDTreeToggle<CR>
-noremap <leader>2 :NERDTreeFocus<CR>
-
-" vim-airline/vim-airline-theme
-let g:airline_theme='minimalist'      " airline theme
-
-" vim-better-whitespace
-let g:better_whitespace_enabled=1     " enable better whitespace
-
 " Vagrant syntax highlighting
 augroup vagrant
   au!
   au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
+
+" ---
+" Plugin Configuration
+" ---
+
+" scrooloose/nerdtree
+" nerdtree closed on launch
+let g:NERDTreeShowHidden=1
+" toggle and focus mapping
+noremap <Leader>1 :NERDTreeToggle<CR>
+noremap <leader>2 :NERDTreeFocus<CR>
+
+" vim-airline/vim-airline-theme
+" ---
+" airline theme
+let g:airline_theme='minimalist'
+
+" vim-better-whitespace
+" ---
+" enable better whitespace
+let g:better_whitespace_enabled=1
