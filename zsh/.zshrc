@@ -17,7 +17,7 @@ plugins=(
 )
 
 # env
-export EDITOR="vim"
+export EDITOR="nvim"
 export CONFIG_PATH="${HOME}/.config"
 
 # go
