@@ -3,15 +3,13 @@
 " ---
 
 call plug#begin("~/.config/nvim/plugged")
-Plug 'scrooloose/nerdtree'                                      " tree style directory navigation
+Plug 'preservim/nerdtree'                                       " tree style directory navigation
 Plug 'vim-airline/vim-airline'                                  " status line
 Plug 'vim-airline/vim-airline-themes'                           " themes for status line
 Plug 'ntpeters/vim-better-whitespace'                           " highlight whitespace
 Plug 'tpope/vim-endwise'                                        " autocompletion of endings
-Plug 'hashivim/vim-terraform', { 'for': 'hcl' }                 " syntax hightlighting for terraform
-Plug 'juliosueiras/vim-terraform-completion', { 'for': 'hcl' }  " autocompletion for terraform
-Plug 'hashicorp/sentinel.vim'                                   " syntax highlighting for sentinel
-Plug 'elzr/vim-json'                                            " syntax highlighting for json
+Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " completions
+Plug 'ryanoasis/vim-devicons'                                   " pretty icons and shit
 call plug#end()
 
 " ---
@@ -23,6 +21,7 @@ let mapleader=','                     	" remap leader
 set backspace=indent,eol,start        	" allow real backspacing
 set nocompatible                      	" make it viM
 set nobackup                          	" don't use a backup file
+set nowritebackup                       " again, no backup
 set colorcolumn=81,121                	" highlight columns
 set cursorline                        	" underline the current line
 set autoindent                        	" indent based on the previous line
@@ -71,7 +70,7 @@ augroup END
 "  plugin configuration
 " ---
 
-" scrooloose/nerdtree
+" preservim/nerdtree
 " nerdtree closed on launch
 let g:NERDTreeShowHidden=1
 " toggle and focus mapping
@@ -88,3 +87,20 @@ let g:airline_theme='minimalist'
 " enable better whitespace
 let g:better_whitespace_enabled=1
 
+" neoclide/coc.vim
+" ---
+" use tab for completion.
+" shamelessly lifted staight from the readme
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+" change the update time
+" apparently this makes for better ux
+set updatetime=300

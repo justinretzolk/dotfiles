@@ -4,11 +4,11 @@ cask_args appdir: "~/Applications"
 tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
 tap 'warrensbox/tap'
+tap 'homebrew/cask-fonts'
 
 # Brew
 brew 'stow'
 brew 'neovim'
-brew 'vim'
 brew 'python'
 brew 'python3'
 brew 'git'
@@ -21,6 +21,7 @@ brew 'zsh-completions'
 brew 'fzf'
 brew 'tfswitch'
 brew 'packer'
+brew 'node'
 
 # Cask
 cask '1password'
@@ -34,3 +35,5 @@ cask 'virtualbox'
 cask 'vagrant'
 cask 'logitech-options'
 cask 'firefox'
+cask 'font-firacode-nerd-font'
+cask 'font-firamono-nerd-font'
