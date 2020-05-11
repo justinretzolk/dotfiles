@@ -26,9 +26,9 @@ export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 
 # oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_CUSTOM="$HOME/.dotfiles/zsh/custom"
-source $ZSH/oh-my-zsh.sh
+export ZSH="${HOME}/.oh-my-zsh"
+export ZSH_CUSTOM="${HOME}/.dotfiles/zsh/custom"
+source ${ZSH}/oh-my-zsh.sh
 
 # ripgrep
 export RIPGREP_CONFIG_PATH="${CONFIG_PATH}/rg/.ripgreprc"
