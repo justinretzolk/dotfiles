@@ -15,8 +15,8 @@ call plug#end()
 " ---
 "  basic settings
 " ---
-
-syntax enable				" enable syntax highlighting
+" don't think I need to explicitly enable syntax now that I've moved to coc-nvim
+"syntax enable				" enable syntax highlighting
 let mapleader=','                     	" remap leader
 set backspace=indent,eol,start        	" allow real backspacing
 set nocompatible                      	" make it viM
@@ -89,18 +89,17 @@ let g:better_whitespace_enabled=1
 
 " neoclide/coc.vim
 " ---
-" use tab for completion.
-" shamelessly lifted staight from the readme
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
+" use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+  return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+
+
 " change the update time
-" apparently this makes for better ux
 set updatetime=300
