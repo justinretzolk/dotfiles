@@ -1,2 +1,5 @@
 # Tired of typing -i
 --smart-case
+
+# Pretty print even when piping to something else like `less`
+--pretty
