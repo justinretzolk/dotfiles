@@ -3,9 +3,9 @@
 # Close System Preferences just in case
 osascript -e 'tell application "System Preferences" to quit'
 
-###############################################################################
-##  General UI/UX                                                            ##
-###############################################################################
+# ------------- #
+# General UI/UX #
+# ------------- #
 
 # Enable three finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
@@ -22,9 +22,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Set dark theme
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
 
-###############################################################################
-##  Screenshots                                                              ##
-###############################################################################
+# ----------- #
+# Screenshots #
+# ----------- #
 
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
@@ -35,9 +35,9 @@ defaults write com.apple.screencapture type -string "png"
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
-###############################################################################
-##  Finder                                                                   ##
-###############################################################################
+# ------ #
+# Finder #
+# ------ #
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -51,9 +51,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
-###############################################################################
-##  Safari                                                                   ##
-###############################################################################
+# ------ #
+# Safari #
+# ------ #
 
 # Prevent Safari from opening 'safe' files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
@@ -66,19 +66,19 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
-###############################################################################
-##  Mail                                                                     ##
-###############################################################################
+# ---- #
+# Mail #
+# ---- #
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-###############################################################################
-## iTerm 2                                                                   ##
-###############################################################################
+# ------- #
+# iTerm 2 #
+# ------- #
 
 # Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/config/macos/iterm/"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/os/macos/iterm/"
 
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
