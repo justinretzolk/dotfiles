@@ -6,17 +6,9 @@
   path  = zsh/custom/themes/spaceship-prompt
   url   = https://github.com/denysdovhan/spaceship-prompt.git
 
-[submodule "zsh-abbr"]
-  path  = zsh/custom/plugins/zsh-abbr
-  url   = https://github.com/olets/zsh-abbr.git
-
 [submodule "zsh-syntax-highlighting"]
   path  = zsh/custom/plugins/zsh-syntax-highlighting
   url   = https://github.com/zsh-users/zsh-syntax-highlighting.git
-
-[submodule "zsh-autosuggestions"]
-  path  = zsh/custom/plugins/zsh-autosuggestions
-  url   = https://github.com/zsh-users/zsh-autosuggestions.git
 
 [submodule "nvim-plug"]
   path = config/.config/nvim/autoload
