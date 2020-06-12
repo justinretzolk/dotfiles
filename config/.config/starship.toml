@@ -36,8 +36,6 @@ symbol = " "
 symbol = " "
 
 [hostname]
-ssh_only = false
-trim_at = "."
 style = "dimmed green"
 prefix = "on "
 
