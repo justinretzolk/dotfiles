@@ -7,7 +7,5 @@
 .Trashes
 ._*
 **/*history*
-**work*
-vim/.vim/plugged/*
 config/.config/nvim/plugged
 config/.config/coc/
