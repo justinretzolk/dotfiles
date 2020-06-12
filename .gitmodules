@@ -2,10 +2,6 @@
   path  = zsh/.oh-my-zsh
   url   = https://github.com/robbyrussell/oh-my-zsh.git
 
-[submodule "spaceship-prompt"]
-  path  = zsh/custom/themes/spaceship-prompt
-  url   = https://github.com/denysdovhan/spaceship-prompt.git
-
 [submodule "zsh-syntax-highlighting"]
   path  = zsh/custom/plugins/zsh-syntax-highlighting
   url   = https://github.com/zsh-users/zsh-syntax-highlighting.git

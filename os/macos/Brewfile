@@ -21,6 +21,7 @@ brew 'zsh-completions'
 brew 'fzf'
 brew 'tfswitch'
 brew 'node'
+brew 'starship'
 
 # Cask
 cask '1password'
