@@ -12,6 +12,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}    " completions
 Plug 'ryanoasis/vim-devicons'                      " pretty icons and shit
 Plug 'hashicorp/sentinel.vim'                      " sentinel syntax highlighting
 Plug 'hashivim/vim-terraform'                      " terraform syntax highlighting
+Plug 'arcticicestudio/nord-vim'                    " nord colorscheme
 call plug#end()
 
 " ---
@@ -41,6 +42,7 @@ set incsearch                         	" show searches while typing
 set hlsearch                          	" highlight searches
 set ignorecase                        	" ignore cases
 set smartcase                         	" override ignorecase when searching with a caps
+colorscheme nord
 
 " ---
 "  behavior
@@ -82,7 +84,7 @@ noremap <leader>2 :NERDTreeFocus<CR>
 " vim-airline/vim-airline-theme
 " ---
 " airline theme
-let g:airline_theme='minimalist'
+let g:airline_theme='nord'
 
 " vim-better-whitespace
 " ---
