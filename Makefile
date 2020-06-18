@@ -30,5 +30,3 @@ apt:
 
 stow:
 	stow config
-	stow git
-	stow zsh
