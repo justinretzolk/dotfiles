@@ -9,3 +9,4 @@
 **/*history*
 config/.config/nvim/plugged
 config/.config/coc/
+**/*zcompdump*

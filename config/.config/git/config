@@ -1,12 +1,12 @@
 [user]
-  name = justinretzolk
+  name  = justinretzolk
   email = jretzolk@hashicorp.com
 
 [credential]
   helper = osxkeychain
 
 [core]
-  excludes = ~/.dotfiles/git/.gitignore_global
+  excludes = ~/.config/git/gitignore_global
 
 [diff]
   noprefix = true

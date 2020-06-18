@@ -20,8 +20,9 @@ export PATH="${GOBIN}:${PATH}"
 export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/rg/.ripgreprc"
 
 # oh-my-zsh
-export ZSH="${HOME}/.oh-my-zsh"
-export ZSH_CUSTOM="${HOME}/.dotfiles/zsh/custom"
+export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
+export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
+# come back to this and see about eliminating $ZSH entirely
 source ${ZSH}/oh-my-zsh.sh
 
 # nord colorscheme
