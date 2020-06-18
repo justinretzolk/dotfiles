@@ -35,14 +35,23 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 # general aliases
 alias vi="nvim"
 alias vim="nvim"
-alias :q="exit"
 alias l="ls -lAh"
 alias pbc="pbcopy <"
-alias reload="source ~/.zshrc"
 
-# work aliases
-alias bundle='cd ~/Downloads/; process-bundle ~/HashiCorp/support-bundles/; cd ~/HashiCorp/support-bundles/'
-alias dump='if [[ -e master/replicated/internal/ledis-app.dump ]]; then ptfe-support-tool --dump-file master/replicated/internal/ledis-app.dump | jq .; else jq . master/replicated/internal/app-config.json; fi'
+# work functions
+function bundle () {
+  cd ~/Downloads
+  process-bundle ~/Hashicorp/support-bundles
+  cd ~/HashiCorp/support-bundles
+}
+
+function dump () {
+  if  [[ -e master/replicated/internal/ledis-app.dump ]]; then
+    ptfe-support-tool --dump-file master/replicated/internal/ledis-app.dump | jq '.'
+  else
+    jq '.' master/replicated/internal/app-config.json
+  fi
+}
 
 # starship
 eval "$(starship init zsh)"
