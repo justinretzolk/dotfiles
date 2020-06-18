@@ -3,3 +3,6 @@
 
 # Pretty print even when piping to something else like `less`
 --pretty
+
+# Supress line numbers
+--no-line-number
