@@ -1,9 +1,6 @@
 [user]
-  name  = justinretzolk
-  email = jretzolk@hashicorp.com
-
-[credential]
-  helper = osxkeychain
+  name  = Justin Retzolk
+  email = 44710313+justinretzolk@users.noreply.github.com
 
 [core]
   excludes = ~/.config/git/gitignore_global
