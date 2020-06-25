@@ -1,3 +1,6 @@
+# TODO
+# Readd ripgrep
+
 packages=(
   stow
   neovim
@@ -9,7 +12,6 @@ packages=(
   curl
   tree
   jq
-  ripgrep
 )
 
 sudo apt -y install ${packages[@]}
