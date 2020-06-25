@@ -1,25 +1,14 @@
-install_package () {
-  sudo apt-get -y install $1;
-}
+packages=(
+  stow
+  neovim
+  python
+  python3
+  git
+  wget
+  zsh
+  curl
+  tree
+  jq
+)
 
-install_pip () {
-  sudo pip3 install $1;
-}
-
-# Install necessary packages
-install_package "stow";
-install_package "vim";
-install_package "python";
-install_package "python3";
-install_package "python3-dev";
-install_package "python3-pip";
-install_package "git";
-install_package "wget";
-install_package "zsh";
-install_package "curl";
-install_package "tree";
-install_package "jq";
-
-# pip install
-install_pip "--upgrade setuptools";
-install_pip "thefuck";
+sudo apt -y install ${packages[@]}
