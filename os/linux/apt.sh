@@ -9,6 +9,7 @@ packages=(
   curl
   tree
   jq
+  ripgrep
 )
 
 sudo apt -y install ${packages[@]}

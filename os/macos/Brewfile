@@ -21,6 +21,7 @@ brew 'fzf'
 brew 'tfswitch'
 brew 'node'
 brew 'starship'
+brew 'ripgrep'
 
 # Cask
 cask '1password'
