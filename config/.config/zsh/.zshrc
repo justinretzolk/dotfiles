@@ -46,8 +46,6 @@ complete -o nospace -C /usr/local/bin/vault vault
 complete -o nospace -C /usr/local/bin/terraform terraform
 
 # general aliases
-alias vi="nvim"
-alias vim="nvim"
 alias l="ls -lAh"
 alias pbc="pbcopy <"
 
