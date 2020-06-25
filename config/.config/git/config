@@ -1,6 +1,7 @@
 [user]
   name  = Justin Retzolk
   email = 44710313+justinretzolk@users.noreply.github.com
+  useConfigOnly = true
 
 [core]
   excludes = ~/.config/git/gitignore_global
