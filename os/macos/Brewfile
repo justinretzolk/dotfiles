@@ -24,7 +24,6 @@ brew 'starship'
 brew 'ripgrep'
 
 # Cask
-cask '1password'
 cask 'slack'
 cask 'iterm2'
 cask 'docker'

@@ -3,10 +3,6 @@
 # Determine what type of OS you're running
 OS=$(uname -s)
 
-# stow the config directory
-# dots are set up for XDG spec, this directory is the only one we need to stow
-stow config
-
 if [[ $OS == "Darwin" ]]; then
 
   # install defaults
@@ -42,3 +38,7 @@ else
   exit
 
 fi
+
+# stow the config directory
+# dots are set up for XDG spec, this directory is the only one we need to stow
+stow config
