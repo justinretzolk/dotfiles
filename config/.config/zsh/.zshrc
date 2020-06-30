@@ -1,6 +1,7 @@
 # oh-my-zsh plugins
 plugins=(
   colored-man-pages
+  kubectl
   terraform
   vagrant
   zsh-syntax-highlighting

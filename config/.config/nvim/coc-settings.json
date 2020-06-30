@@ -8,5 +8,8 @@
         "terraform"
       ]
     }
+  },
+  "yaml.schemas": {
+    "kubernetes": "/*.yaml"
   }
 }
