@@ -50,7 +50,9 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 alias l="ls -lAh"
 alias pbc="pbcopy <"
 
-# work functions
+# work functions and aliases
+alias keymgmt="terraform-enterprise-keymgmt"
+
 function bundle () {
   cd ~/Downloads
   process-bundle ~/Hashicorp/support-bundles
