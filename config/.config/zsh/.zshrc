@@ -60,10 +60,10 @@ function bundle () {
 }
 
 function dump () {
-  if  [[ -e master/replicated/internal/ledis-app.dump ]]; then
-    ptfe-support-tool --dump-file master/replicated/internal/ledis-app.dump | jq '.'
+  if  [[ -e primary/replicated/internal/ledis-app.dump ]]; then
+    ptfe-support-tool --dump-file primary/replicated/internal/ledis-app.dump | jq '.'
   else
-    jq '.' master/replicated/internal/app-config.json
+    jq '.' primary/replicated/internal/app-config.json
   fi
 }
 
