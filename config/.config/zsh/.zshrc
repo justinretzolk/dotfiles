@@ -25,7 +25,7 @@ elif ( command -v vi > /dev/null 2>&1 ); then
 fi
 
 # go
-export GOPATH="${HOME}/.go"
+export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 
