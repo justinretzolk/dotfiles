@@ -5,6 +5,7 @@ tap 'caskroom/cask'
 tap 'homebrew/cask-drivers'
 tap 'warrensbox/tap'
 tap 'homebrew/cask-fonts'
+tap 'qmk/qmk'
 
 # Brew
 brew 'stow'
@@ -22,6 +23,7 @@ brew 'tfswitch'
 brew 'node'
 brew 'starship'
 brew 'ripgrep'
+brew 'qmk'
 
 # Cask
 cask 'slack'
