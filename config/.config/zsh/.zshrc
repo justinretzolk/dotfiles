@@ -41,6 +41,9 @@ source ${ZSH}/oh-my-zsh.sh
 # nord colorscheme
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
+# qmk
+export QMK_HOME="~/github.com/justinretzolk/qmk_firmware"
+
 # hashicorp autocomplete
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
@@ -60,10 +63,30 @@ function bundle () {
 }
 
 function dump () {
-  if  [[ -e primary/replicated/internal/ledis-app.dump ]]; then
-    ptfe-support-tool --dump-file primary/replicated/internal/ledis-app.dump | jq '.'
+  if [[ -d primary ]]; then
+
+    if  [[ -e primary/replicated/internal/ledis-app.dump ]]; then
+      echo "[primary] Using the dump file"
+      ptfe-support-tool --dump-file primary/replicated/internal/ledis-app.dump | jq '.'
+    else
+      echo "[primary] Using the app-config file"
+      jq '.' primary/replicated/internal/app-config.json
+    fi
+
+  elif [[ -d master ]]; then
+
+    if  [[ -e master/replicated/internal/ledis-app.dump ]]; then
+      echo "[master] Using the dump file"
+      ptfe-support-tool --dump-file master/replicated/internal/ledis-app.dump | jq '.'
+    else
+      echo "[master] Using the app-config file"
+      jq '.' master/replicated/internal/app-config.json
+    fi
+
   else
-    jq '.' primary/replicated/internal/app-config.json
+
+    echo "Neither the primary nor master directories exist"
+
   fi
 }
 
