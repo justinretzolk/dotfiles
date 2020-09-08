@@ -1436,7 +1436,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/os/macos/iterm/nord-iterm2/src/xml</string>
+	<string>~/.dotfiles/config/.config/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1485,7 +1485,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>469 199 545 151 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>320 321 799 448 0 0 1440 877 </string>
+	<string>560 456 799 448 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 704 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -3164,7 +3164,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/.dotfiles/os/macos/iterm/</string>
+	<string>/Users/justinretzolk/.dotfiles/config/.config/iterm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
