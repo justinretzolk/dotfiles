@@ -1,6 +1,6 @@
 [submodule "nvim-plug"]
-  path = config/.config/nvim/autoload
-  url = https://github.com/junegunn/vim-plug.git
+        path = config/.config/nvim/autoload
+        url = https://github.com/junegunn/vim-plug.git
 [submodule "nord/nord-iterm2"]
 	path = nord/nord-iterm2
 	url = https://github.com/arcticicestudio/nord-iterm2.git
