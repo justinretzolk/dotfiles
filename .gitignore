@@ -12,3 +12,4 @@ config/.config/coc/
 **/*zcompdump*
 config/.config/karabiner/assets
 config/.config/karabiner/automatic_backups
+config/.config/tmux/plugins
