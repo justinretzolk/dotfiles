@@ -56,13 +56,17 @@ alias pbc="pbcopy <"
 # work functions and aliases
 alias keymgmt="terraform-enterprise-keymgmt"
 
-function bundle () {
+function tfctoken() {
+  export TOKEN=$(jq -r '.credentials["app.terraform.io"].token' ~/.terraform.d/credentials.tfrc.json)
+}
+
+function bundle() {
   cd ~/Downloads
   process-bundle ~/Hashicorp/support-bundles
   cd ~/HashiCorp/support-bundles
 }
 
-function dump () {
+function dump() {
   if [[ -d primary ]]; then
 
     if  [[ -e primary/replicated/internal/ledis-app.dump ]]; then
