@@ -22,6 +22,7 @@ if [[ $OS == "Darwin" ]]; then
     sleep 5
   done
 
+  # lol WHAT am I even doing here. future justin, please fix this.
   # install brews
   brew bundle check --file=${PWD}/os/macos/Brewfile
 
