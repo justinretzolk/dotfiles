@@ -24,6 +24,21 @@ elif ( command -v vi > /dev/null 2>&1 ); then
   VISUAL=${EDITOR}
 fi
 
+# autocomplete
+
+## brew
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+## hashicorp autocomplete
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
+complete -o nospace -C /usr/local/bin/terraform terraform
+
 # go
 export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
@@ -32,22 +47,11 @@ export PATH="${GOBIN}:${PATH}"
 # ripgrep
 export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/rg/.ripgreprc"
 
-# oh-my-zsh
-export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
-export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
-# come back to this and see about eliminating $ZSH entirely
-source ${ZSH}/oh-my-zsh.sh
-
 # nord colorscheme
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 # qmk
 export QMK_HOME="~/github.com/justinretzolk/qmk_firmware"
-
-# hashicorp autocomplete
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/vault vault
-complete -o nospace -C /usr/local/bin/terraform terraform
 
 # general aliases
 alias l="ls -lAh"
@@ -93,6 +97,12 @@ function dump() {
 
   fi
 }
+
+# oh-my-zsh
+export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
+export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
+# come back to this and see about eliminating $ZSH entirely
+source ${ZSH}/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"

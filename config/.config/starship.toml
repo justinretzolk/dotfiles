@@ -1,28 +1,38 @@
 add_newline = false
 
-[aws]
-symbol = " "
-disabled = true
+# General prompt configuration
 
 [battery]
 full_symbol = " "
 charging_symbol = " "
 discharging_symbol = " "
 
-[character]
-symbol = "➜"
+[[battery.display]]
+threshold = 10
+style = "bold red"
 
-[conda]
-symbol = " "
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✖](bold red)"
+
+[hostname]
+format = "[$hostname]($style) in "
+
+[memory_usage]
+symbol = " "
+
+# Languages and whatnot
+
+[aws]
+symbol = " "
+disabled = true
 
 [docker]
 symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
 
 [git_branch]
 symbol = " "
@@ -30,50 +40,8 @@ symbol = " "
 [golang]
 symbol = " "
 
-[haskell]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[hostname]
-style = "dimmed green"
-prefix = "on "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[memory_usage]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[package]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
 [terraform]
+format = "[$symbol$workspace]($style) "
 symbol = "tf "
-show_version = true
 style = "105"
+disabled = true
