@@ -29,13 +29,9 @@ fi
 ## brew
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-  autoload -Uz compinit
-  compinit
 fi
 
 ## hashicorp autocomplete
-autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 complete -o nospace -C /usr/local/bin/terraform terraform
 
