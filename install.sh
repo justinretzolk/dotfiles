@@ -8,6 +8,11 @@ if [[ $OS == "Darwin" ]]; then
   # install defaults
   #${PWD}/os/macos/defaults.sh
 
+  # install xcode cli tools
+  # need to test that this actually works before I implement it lol
+  # should probably actually figure out a way to test whether it's already been done.
+  #xcode-select --install
+
   # make sure brew is installed
   command -v brew > /dev/null && echo "Homebrew is already installed." || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
 
@@ -18,7 +23,7 @@ if [[ $OS == "Darwin" ]]; then
   done
 
   # install brews
-  brew bundle check --file=${PWD}/os/macos/Brewfile
+  brew bundle install --file=${PWD}/os/macos/Brewfile
 
 elif [[ $OS == "Linux" ]]; then
 
