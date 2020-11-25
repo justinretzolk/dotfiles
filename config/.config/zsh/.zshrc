@@ -24,6 +24,12 @@ elif ( command -v vi > /dev/null 2>&1 ); then
   VISUAL=${EDITOR}
 fi
 
+# oh-my-zsh
+export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
+export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
+# come back to this and see about eliminating $ZSH entirely
+source ${ZSH}/oh-my-zsh.sh
+
 # autocomplete
 
 ## brew
@@ -94,11 +100,6 @@ function dump() {
   fi
 }
 
-# oh-my-zsh
-export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
-export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
-# come back to this and see about eliminating $ZSH entirely
-source ${ZSH}/oh-my-zsh.sh
 
 # starship
 eval "$(starship init zsh)"
