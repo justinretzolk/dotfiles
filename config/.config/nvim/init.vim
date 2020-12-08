@@ -7,7 +7,6 @@ Plug 'preservim/nerdtree'                          " tree style directory naviga
 Plug 'vim-airline/vim-airline'                     " status line
 Plug 'vim-airline/vim-airline-themes'              " themes for status line
 Plug 'ntpeters/vim-better-whitespace'              " highlight whitespace
-"Plug 'tpope/vim-endwise'                           " autocompletion of endings
 Plug 'neoclide/coc.nvim', {'branch': 'release'}    " completions
 Plug 'ryanoasis/vim-devicons'                      " pretty icons and shit
 Plug 'hashicorp/sentinel.vim'                      " sentinel syntax highlighting
@@ -18,31 +17,29 @@ call plug#end()
 " ---
 "  basic settings
 " ---
-" don't think I need to explicitly enable syntax now that I've moved to coc-nvim
-"syntax enable				" enable syntax highlighting
-let mapleader=','                     	" remap leader
-set backspace=indent,eol,start        	" allow real backspacing
-set nocompatible                      	" make it viM
-set nobackup                          	" don't use a backup file
-set nowritebackup                       " again, no backup
-set colorcolumn=81,121                	" highlight columns
-set cursorline                        	" underline the current line
-set autoindent                        	" indent based on the previous line
-set smartindent                       	" indent based on syntax
-set relativenumber                    	" use relative line numbers
-set number                            	" show the line number of current line
-set wrap                              	" wrap lines by default
-set softtabstop=2                    	" number of spaces tab uses
-set shiftwidth=2                      	" number of spaces to use for indent
-set expandtab                         	" use spaces instead of tabs
-set modifiable                        	" allow modifying a ro file (for NERDTree)
-set clipboard=unnamed                 	" yank to macOS clipboard
-set noerrorbells                      	" don't yell at me
-set incsearch                         	" show searches while typing
-set hlsearch                          	" highlight searches
-set ignorecase                        	" ignore cases
-set smartcase                         	" override ignorecase when searching with a caps
-colorscheme nord
+let mapleader=','              " remap leader
+set backspace=indent,eol,start " allow real backspacing
+set nocompatible               " make it viM
+set nobackup                   " don't use a backup file
+set nowritebackup              " again, no backup
+set colorcolumn=81,121         " highlight columns
+set cursorline                 " underline the current line
+set autoindent                 " indent based on the previous line
+set smartindent                " indent based on syntax
+set relativenumber             " use relative line numbers
+set number                     " show the line number of current line
+set wrap                       " wrap lines by default
+set softtabstop=2              " number of spaces tab uses
+set shiftwidth=2               " number of spaces to use for indent
+set expandtab                  " use spaces instead of tabs
+set modifiable                 " allow modifying a ro file (for NERDTree)
+set clipboard=unnamed          " yank to macOS clipboard
+set noerrorbells               " don't yell at me
+set incsearch                  " show searches while typing
+set hlsearch                   " highlight searches
+set ignorecase                 " ignore cases
+set smartcase                  " override ignorecase when searching with a caps
+colorscheme nord               " set the colorscheme
 
 " ---
 "  behavior

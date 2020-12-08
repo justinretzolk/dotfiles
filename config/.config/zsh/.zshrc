@@ -13,15 +13,15 @@ export XDG_CONFIG_HOME="${HOME}/.config" # to make macos more XDG compliant
 # Configure EDITOR and VISUAL in order of preference.
 # Credit to GitHub user sudomateo
 if ( command -v nvim > /dev/null 2>&1 ); then
-  EDITOR=$(command -v nvim)
-  VISUAL=${EDITOR}
+  export EDITOR=$(command -v nvim)
+  export VISUAL=${EDITOR}
   alias vim='nvim'
 elif ( command -v vim > /dev/null 2>&1 ); then
-  EDITOR=$(command -v vim)
-  VISUAL=${EDITOR}
+  export EDITOR=$(command -v vim)
+  export VISUAL=${EDITOR}
 elif ( command -v vi > /dev/null 2>&1 ); then
-  EDITOR=$(command -v vi)
-  VISUAL=${EDITOR}
+  export EDITOR=$(command -v vi)
+  export VISUAL=${EDITOR}
 fi
 
 # oh-my-zsh
