@@ -12,6 +12,7 @@ Plug 'ryanoasis/vim-devicons'                      " pretty icons and shit
 Plug 'hashicorp/sentinel.vim'                      " sentinel syntax highlighting
 Plug 'hashivim/vim-terraform'                      " terraform syntax highlighting
 Plug 'arcticicestudio/nord-vim'                    " nord colorscheme
+Plug 'vimwiki/vimwiki'                             " vimwiki
 call plug#end()
 
 " ---
@@ -87,6 +88,11 @@ let g:airline_theme='nord'
 " ---
 " enable better whitespace
 let g:better_whitespace_enabled=1
+
+" vimwiki
+" ---
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.wiki'}]
+let g:vimwiki_ext2syntax = {'.wiki': 'markdown'}
 
 " neoclide/coc.vim
 " ---
