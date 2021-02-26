@@ -55,3 +55,6 @@ yabai -m rule --add app="^Notes$" space=comm
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Zoom$" manage=off
 
+# stop firefox download windows from tiling
+yabai -m rule --add app="^Firefox" title="^Opening *" manage=off
+

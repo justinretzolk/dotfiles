@@ -1,17 +1,8 @@
-# oh-my-zsh plugins
-plugins=(
-  colored-man-pages
-  kubectl
-  terraform
-  vagrant
-  zsh-syntax-highlighting
-)
-
-# env
-export XDG_CONFIG_HOME="${HOME}/.config" # to make macos more XDG compliant
-
-# Configure EDITOR and VISUAL in order of preference.
-# Credit to GitHub user sudomateo
+###################################
+# EDITOR and VISUAL               #
+# Credit to GitHub user sudomateo #
+###################################
+#
 if ( command -v nvim > /dev/null 2>&1 ); then
   export EDITOR=$(command -v nvim)
   export VISUAL=${EDITOR}
@@ -24,22 +15,12 @@ elif ( command -v vi > /dev/null 2>&1 ); then
   export VISUAL=${EDITOR}
 fi
 
-# oh-my-zsh
-export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
-export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
-# come back to this and see about eliminating $ZSH entirely
-source ${ZSH}/oh-my-zsh.sh
+###############
+# Environment #
+###############
 
-# autocomplete
-
-## brew
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
-## hashicorp autocomplete
-complete -o nospace -C /usr/local/bin/vault vault
-complete -o nospace -C /usr/local/bin/terraform terraform
+# XDG
+export XDG_CONFIG_HOME="${HOME}/.config" # to make macos more XDG compliant
 
 # go
 export GOPATH="${HOME}/go"
@@ -49,17 +30,35 @@ export PATH="${GOBIN}:${PATH}"
 # ripgrep
 export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/rg/.ripgreprc"
 
-# nord colorscheme
-test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
-
 # qmk
 export QMK_HOME="~/github.com/justinretzolk/qmk_firmware"
 
-# general aliases
+################
+# Autocomplete #
+################
+
+# init
+autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit
+
+# brew
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
+# hashicorp
+complete -o nospace -C /usr/local/bin/vault vault
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+#########################
+# Aliases and Functions #
+#########################
+
+# general
 alias l="ls -lAh"
 alias pbc="pbcopy <"
 
-# work functions and aliases
+# work
 alias keymgmt="terraform-enterprise-keymgmt"
 
 function tfctoken() {
@@ -100,6 +99,8 @@ function dump() {
   fi
 }
 
+############
+# Starship #
+############
 
-# starship
 eval "$(starship init zsh)"
