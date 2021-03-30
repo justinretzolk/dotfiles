@@ -4,7 +4,6 @@ plugins=(
   kubectl
   terraform
   vagrant
-  zsh-syntax-highlighting
 )
 
 # env
