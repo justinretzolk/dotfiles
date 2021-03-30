@@ -10,6 +10,9 @@
 [pull]
   rebase = false
 
+[init]
+  defaultBranch = "main"
+
 # GitHub specific configuration
 [includeIf "gitdir:**/github.com/**"]
 	path = ~/.config/git/github
