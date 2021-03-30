@@ -1,11 +1,3 @@
-# oh-my-zsh plugins
-plugins=(
-  colored-man-pages
-  kubectl
-  terraform
-  vagrant
-)
-
 # env
 export XDG_CONFIG_HOME="${HOME}/.config" # to make macos more XDG compliant
 
