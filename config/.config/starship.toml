@@ -31,9 +31,6 @@ symbol = " "
 symbol = " "
 disabled = true
 
-[docker]
-symbol = " "
-
 [git_branch]
 symbol = " "
 
