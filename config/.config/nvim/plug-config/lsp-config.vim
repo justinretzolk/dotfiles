@@ -9,4 +9,7 @@ nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 lua << EOF
 require'lspconfig'.terraformls.setup{}
+require'lspconfig'.bashls.setup{}
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.jsonls.setup{}
 EOF
