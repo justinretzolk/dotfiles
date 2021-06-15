@@ -40,9 +40,6 @@ export PATH="${GOBIN}:${PATH}"
 # ripgrep
 export RIPGREP_CONFIG_PATH="${XDG_CONFIG_HOME}/rg/.ripgreprc"
 
-# nord colorscheme
-test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
-
 # qmk
 export QMK_HOME="~/github.com/justinretzolk/qmk_firmware"
 
