@@ -16,6 +16,7 @@ call plug#begin("~/.config/nvim/plugged")
   Plug 'vim-airline/vim-airline'         " status line
   Plug 'vim-airline/vim-airline-themes'  " themes for status line
   Plug 'ryanoasis/vim-devicons'          " pretty icons and shit
+  Plug 'joshdick/onedark.vim'            " onedark theme
 call plug#end()
 
 " ---
@@ -26,12 +27,8 @@ set backspace=indent,eol,start    " allow real backspacing
 set nocompatible                  " make it viM
 set nobackup                      " don't use a backup file
 set nowritebackup                 " again, no backup
-set colorcolumn=81,121            " highlight columns
-set cursorline                    " underline the current line
 set autoindent                    " indent based on the previous line
 set smartindent                   " indent based on syntax
-set relativenumber                " use relative line numbers
-set number                        " show the line number of current line
 set wrap                          " wrap lines by default
 set softtabstop=2                 " number of spaces tab uses
 set shiftwidth=2                  " number of spaces to use for indent
@@ -44,7 +41,14 @@ set hlsearch                      " highlight searches
 set ignorecase                    " ignore cases
 set smartcase                     " override ignorecase when searching with a caps
 set completeopt=menuone,noselect  " required for nvim-compe
+
+" visual
+set relativenumber                " use relative line numbers
+set number                        " show the line number of current line
+set cursorline                    " underline the current line
+set colorcolumn=81,121            " highlight columns
 set termguicolors                 " set up colors
+colorscheme onedark
 
 " ---
 "  behavior
