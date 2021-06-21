@@ -41,6 +41,7 @@ set hlsearch                      " highlight searches
 set ignorecase                    " ignore cases
 set smartcase                     " override ignorecase when searching with a caps
 set completeopt=menuone,noselect  " required for nvim-compe
+set noshowmode
 
 " visual
 set relativenumber                " use relative line numbers
