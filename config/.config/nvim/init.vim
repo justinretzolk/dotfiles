@@ -83,7 +83,7 @@ augroup END
 
 source ~/.config/nvim/plug-config/airline.vim
 source ~/.config/nvim/plug-config/better-whitespace.vim
-source ~/.config/nvim/plug-config/lsp-config.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/nvim-compe.vim
 luafile ~/.config/nvim/plug-config/nvim-compe.lua
+luafile ~/.config/nvim/plug-config/lsp-config.lua
