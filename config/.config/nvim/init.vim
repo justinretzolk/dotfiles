@@ -78,6 +78,12 @@ augroup vagrant
   au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
 
+" Go tab formatting
+augroup golang
+  au!
+  au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+augroup END
+
 " ---
 "  plugin configuration
 " ---
