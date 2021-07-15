@@ -9,6 +9,7 @@ call plug#begin("~/.config/nvim/plugged")
   Plug 'hashivim/vim-terraform'                               " terraform syntax highlighting
   Plug 'hrsh7th/nvim-compe'                                   " NeoVIM autocomplete
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " tree-sitter
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }          " go
   " utilities
   Plug 'preservim/nerdtree'              " tree style directory navigation
   Plug 'ntpeters/vim-better-whitespace'  " highlight whitespace
