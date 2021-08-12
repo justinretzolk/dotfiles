@@ -9,7 +9,7 @@ call plug#begin("~/.config/nvim/plugged")
   Plug 'hashivim/vim-terraform'                               " terraform syntax highlighting
   Plug 'hrsh7th/nvim-compe'                                   " NeoVIM autocomplete
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " tree-sitter
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }          " go
+  "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }          " go
   " utilities
   Plug 'preservim/nerdtree'              " tree style directory navigation
   Plug 'ntpeters/vim-better-whitespace'  " highlight whitespace
@@ -31,9 +31,9 @@ set nowritebackup                 " again, no backup
 set autoindent                    " indent based on the previous line
 set smartindent                   " indent based on syntax
 set wrap                          " wrap lines by default
-set softtabstop=2                 " number of spaces tab uses
-set shiftwidth=2                  " number of spaces to use for indent
-set expandtab                     " use spaces instead of tabs
+set tabstop=4                     " smaller tabstop
+set shiftwidth=4                  " must match tabstop
+set noexpandtab                   " use tabs instead of spaces
 set modifiable                    " allow modifying a ro file (for NERDTree)
 set clipboard=unnamed             " yank to macOS clipboard
 set noerrorbells                  " don't yell at me
