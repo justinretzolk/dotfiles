@@ -21,17 +21,6 @@ export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
 # come back to this and see about eliminating $ZSH entirely
 source ${ZSH}/oh-my-zsh.sh
 
-# autocomplete
-
-## brew
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
-## hashicorp autocomplete
-complete -o nospace -C /usr/local/bin/vault vault
-complete -o nospace -C /usr/local/bin/terraform terraform
-
 # go
 export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
@@ -47,43 +36,9 @@ export QMK_HOME="~/github.com/justinretzolk/qmk_firmware"
 alias l="ls -lAh"
 alias pbc="pbcopy <"
 
-# work functions and aliases
-alias keymgmt="terraform-enterprise-keymgmt"
-
 function tfctoken() {
   export TOKEN=$(jq -r '.credentials["app.terraform.io"].token' ~/.terraform.d/credentials.tfrc.json)
 }
-
-function bundle() {
-  cd ~/Downloads
-  process-bundle ~/Hashicorp/support-bundles
-  cd ~/HashiCorp/support-bundles
-}
-
-function dump() {
-  if [[ -d primary ]]; then
-
-    if  [[ -e primary/replicated/internal/ledis-app.dump ]]; then
-      ptfe-support-tool --dump-file primary/replicated/internal/ledis-app.dump | jq '.'
-    else
-      jq '.' primary/replicated/internal/app-config.json
-    fi
-
-  elif [[ -d master ]]; then
-
-    if  [[ -e master/replicated/internal/ledis-app.dump ]]; then
-      ptfe-support-tool --dump-file master/replicated/internal/ledis-app.dump | jq '.'
-    else
-      jq '.' master/replicated/internal/app-config.json
-    fi
-
-  else
-
-    echo "Neither the primary nor master directories exist"
-
-  fi
-}
-
 
 # starship
 eval "$(starship init zsh)"
