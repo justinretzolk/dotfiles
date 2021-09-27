@@ -41,3 +41,8 @@ local servers = { "terraformls", "bashls", "gopls", "jsonls" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
+
+-- need to do some additional configuration for yaml, so can't call it the same way
+require('lspconfig').yamlls.setup{
+  filetypes = { "yaml", "yml" }
+}

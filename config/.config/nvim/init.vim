@@ -1,7 +1,6 @@
 " ---
 "  vim-plug
 " ---
-
 call plug#begin("~/.config/nvim/plugged")
   " lsp and syntax
   Plug 'neovim/nvim-lspconfig'                                " NeoVIM native LSP
@@ -83,6 +82,13 @@ augroup golang
   au!
   au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 augroup END
+
+" YAML tab formatting
+augroup yaml
+  au!
+  au! BufNewFile,BufReadPost *.{yaml,yml} setlocal ts=2 sts=2 sw=2 expandtab
+augroup END
+
 
 " ---
 "  plugin configuration
