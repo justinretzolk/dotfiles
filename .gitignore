@@ -13,3 +13,4 @@ config/.config/coc/
 config/.config/karabiner/assets
 config/.config/karabiner/automatic_backups
 config/.config/tmux/plugins
+config/.config/gh/hosts.yml

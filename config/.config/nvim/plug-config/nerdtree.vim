@@ -5,12 +5,10 @@
 "  keymappings
 " ---
 
-" focus on nerdtree
-noremap <leader>1 :NERDTreeFocus<CR>
 " toggle nerdtree open/closed
-noremap <Leader>2 :NERDTreeToggle<CR>
+noremap <Leader>n :NERDTreeToggle<CR>
 " set nerdtree to the vcs root dir
-noremap <Leader>3 :NERDTreeVCS<CR>
+noremap <Leader>nv :NERDTreeVCS<CR>
 
 " ---
 "  behavior

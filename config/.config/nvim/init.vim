@@ -3,12 +3,10 @@
 " ---
 call plug#begin("~/.config/nvim/plugged")
   " lsp and syntax
-  Plug 'neovim/nvim-lspconfig'                                " NeoVIM native LSP
-  Plug 'hashicorp/sentinel.vim'                               " sentinel syntax highlighting
-  Plug 'hashivim/vim-terraform'                               " terraform syntax highlighting
-  Plug 'hrsh7th/nvim-compe'                                   " NeoVIM autocomplete
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " tree-sitter
-  "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }          " go
+  Plug 'neovim/nvim-lspconfig'           " NeoVIM native LSP
+  Plug 'hashicorp/sentinel.vim'          " sentinel syntax highlighting
+  Plug 'hashivim/vim-terraform'          " terraform syntax highlighting
+  Plug 'hrsh7th/nvim-compe'              " NeoVIM autocomplete
   " utilities
   Plug 'preservim/nerdtree'              " tree style directory navigation
   Plug 'ntpeters/vim-better-whitespace'  " highlight whitespace
