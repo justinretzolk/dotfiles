@@ -3,6 +3,9 @@
 # don't insert a blank line between prompts
 add_newline = false
 
+# let commands run longer so starship quits yelling at me
+command_timeout = 1000
+
 # aws
 [aws]
 symbol = " "
