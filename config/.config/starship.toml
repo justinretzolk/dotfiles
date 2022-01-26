@@ -1,44 +1,50 @@
+# https://starship.rs/config/
+
+# don't insert a blank line between prompts
 add_newline = false
 
-# General prompt configuration
+# aws
+[aws]
+symbol = " "
+disabled = true
 
+# battery symbols
 [battery]
 full_symbol = " "
 charging_symbol = " "
 discharging_symbol = " "
 
-[[battery.display]]
-threshold = 10
-style = "bold red"
-
+# 30 percent battery left
 [[battery.display]]
 threshold = 30
 style = "bold yellow"
 
+# 10 percent battery left
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+# character customization
 [character]
 success_symbol = "[➜](bold green)"
 error_symbol = "[✖](bold red)"
 
-[hostname]
-format = "[$hostname]($style) in "
-
-[memory_usage]
-symbol = " "
-
-# Languages and whatnot
-
-[aws]
-symbol = " "
-disabled = true
-
+# shows the active git branch
 [git_branch]
 symbol = " "
 
+# golang information
 [golang]
 symbol = " "
 
+# show information about the host
+[hostname]
+ssh_only = true
+trim_at = ""
+
+# terraform configuration
 [terraform]
-format = "[$symbol$workspace]($style) "
+format = "[$symbol$version]($style) "
 symbol = "tf "
 style = "105"
-disabled = true
+disabled = false
