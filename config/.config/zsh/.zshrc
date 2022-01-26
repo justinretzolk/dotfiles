@@ -16,6 +16,9 @@ elif ( command -v vi > /dev/null 2>&1 ); then
 fi
 
 # oh-my-zsh
+plugins =(
+	terraform
+)
 export ZSH="${XDG_CONFIG_HOME}/zsh/oh-my-zsh"
 export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh/custom"
 source ${ZSH}/oh-my-zsh.sh
