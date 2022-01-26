@@ -1,6 +1,7 @@
 # Dotfiles
 
-### installation:
+## Installation:
+
 ```bash
 $ git clone --recurse-submodules git@github.com:justinretzolk/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
