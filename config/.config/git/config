@@ -1,8 +1,5 @@
 [user]
-  name  = Justin Retzolk
-
-[core]
-  excludes = ~/.config/git/gitignore_global
+  name = Justin Retzolk
 
 [diff]
   noprefix = true
