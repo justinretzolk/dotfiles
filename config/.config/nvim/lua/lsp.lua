@@ -106,7 +106,7 @@ nvim_lsp.yamlls.setup {
 }
 
 require('nvim-treesitter.configs').setup {
-	ensure_installed = { 'go', 'hcl', 'lua', 'json', 'yaml' },
+	ensure_installed = { 'bash', 'go', 'hcl', 'json', 'lua', 'yaml' },
 	sync_install = true,
 	highlight = {
 		enable = true,
