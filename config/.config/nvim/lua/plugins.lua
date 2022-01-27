@@ -11,6 +11,7 @@ vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 return require('packer').startup(function(use)
 	-- package manager
 	use 'wbthomason/packer.nvim' -- packer itself
+
 	-- lsp, completion, and tree sitter
 	use 'neovim/nvim-lspconfig' 	-- nvim native lsp
 	use 'hrsh7th/nvim-cmp' 			-- autocomplete plugin
@@ -24,9 +25,11 @@ return require('packer').startup(function(use)
 			':TSUpdate',
 		}
 	}								-- treesitter
+
 	-- utilities
 	use 'preservim/nerdtree' 				-- tree style directory navigation
 	use 'ntpeters/vim-better-whitespace' 	-- highlight whitespace
+
 	-- theming
 	use 'vim-airline/vim-airline' 			-- status line
 	use 'vim-airline/vim-airline-themes' 	-- status line themes

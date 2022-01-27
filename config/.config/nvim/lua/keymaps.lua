@@ -1,6 +1,6 @@
 -- make the config much less verbose
 local map = vim.api.nvim_set_keymap
-opts = { noremap = true }
+local opts = { noremap = true }
 
 -- disable direction keys in normal mode
 map('n', '<Up>', '', opts)
