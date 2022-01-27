@@ -5,24 +5,25 @@ if vim.fn.empty(vim.fn.glob(packer_path)) > 0 then
 end
 
 -- Compile Packer plugin when this plugins.lua is updated.
-vim.cmd([[
-	augroup packer_user_config
-		autocmd!
-		autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-	augroup end
-]])
+vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 
 -- Install Vim plugins.
 return require('packer').startup(function(use)
 	-- package manager
 	use 'wbthomason/packer.nvim' -- packer itself
-	-- lsp and completion
+	-- lsp, completion, and tree sitter
 	use 'neovim/nvim-lspconfig' 	-- nvim native lsp
 	use 'hrsh7th/nvim-cmp' 			-- autocomplete plugin
 	use 'L3MON4D3/LuaSnip' 			-- snippets plugin
 	use 'hrsh7th/cmp-nvim-lsp' 		-- nvim-cmp source for nvim's lsp
 	use 'hrsh7th/cmp-path' 			-- nvim-cmp source for filesystem paths
 	use 'saadparwaiz1/cmp_luasnip' 	-- nvim-cmp source for snippets
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = {
+			':TSUpdate',
+		}
+	}								-- treesitter
 	-- utilities
 	use 'preservim/nerdtree' 				-- tree style directory navigation
 	use 'ntpeters/vim-better-whitespace' 	-- highlight whitespace

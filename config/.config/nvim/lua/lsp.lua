@@ -84,7 +84,7 @@ cmp.setup {
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "bashls", "gopls", "jsonls", "terraformls" }
+local servers = { "bashls", "gopls", "jsonls", "sumneko_lua", "terraformls" }
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup {
 		on_attach = on_attach,
@@ -93,7 +93,7 @@ for _, lsp in ipairs(servers) do
 end
 
 -- yaml-ls
-nvim_lsp.yamlls.setup{
+nvim_lsp.yamlls.setup {
 	filetypes = { "yaml" },
 	capabilities = capabilities,
   	settings = {
@@ -104,3 +104,14 @@ nvim_lsp.yamlls.setup{
 		},
 	},
 }
+
+require('nvim-treesitter.configs').setup {
+	ensure_installed = { 'go', 'hcl', 'lua', 'json', 'yaml' },
+	sync_install = true,
+	highlight = {
+		enable = true,
+	},
+}
+
+local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
+parser_config.hcl.used_by = "terraform"
