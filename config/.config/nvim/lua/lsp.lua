@@ -84,31 +84,13 @@ cmp.setup {
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "bashls", "jsonls" }
+local servers = { "bashls", "gopls", "jsonls", "terraformls" }
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup {
 		on_attach = on_attach,
 		capabilities = capabilities,
 	}
 end
-
--- gopls
-nvim_lsp.gopls.setup {
-	cmd = { "gopls", "serve" },
-	on_attach = on_attach,
-	filetypes = { "go", "gomod" },
-	root_dir = nvim_lsp.util.root_pattern("go.mod", ".git"),
-	capabilities = capabilities,
-}
-
--- terraform-ls
-nvim_lsp.terraformls.setup {
-	cmd = { "terraformls", "serve" },
-	on_attach = on_attach,
-	filetypes = { "terraform" },
-	root_dir = nvim_lsp.util.root_pattern(".terraform", ".git"),
-	capabilities = capabilities,
-}
 
 -- yaml-ls
 nvim_lsp.yamlls.setup{

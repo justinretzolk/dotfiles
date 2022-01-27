@@ -1,4 +1,12 @@
+-- things that don't seem to have a native way to do it
 vim.cmd([[colorscheme onedark]])
+
+vim.cmd([[
+	filetype plugin indent on
+	syntax on
+]])
+
+-- native things
 vim.g.airline_theme = 'onedark'
 vim.g.airline_powerline_fonts = 1
 vim.g.better_whitespace_enabled = 1
