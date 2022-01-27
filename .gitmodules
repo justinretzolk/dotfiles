@@ -7,6 +7,3 @@
 [submodule "config/.config/tmux/plugins/tpm"]
 	path = config/.config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "config/.config/nvim/autoload"]
-	path = config/.config/nvim/autoload
-	url = https://github.com/junegunn/vim-plug

@@ -1,9 +1,9 @@
---vim.o.airline_theme = 'onedark'
---vim.opt_global.airline_powerline_fonts = 1
---vim.opt_global.better_whitespace_enabled = 1
---vim.opt_global.colorscheme = 'onedark'
---vim.opt_global.mapleader = ','
---vim.opt_global.NERDTreeShowHidden = 1
+vim.cmd([[colorscheme onedark]])
+vim.g.airline_theme = 'onedark'
+vim.g.airline_powerline_fonts = 1
+vim.g.better_whitespace_enabled = 1
+vim.g.mapleader = ','
+vim.g.NERDTreeShowHidden = 1
 vim.opt.autoindent = true
 vim.opt.backspace = { 'indent', 'eol', 'start' }
 vim.opt.backup = false
