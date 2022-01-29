@@ -7,10 +7,10 @@
 .Trashes
 ._*
 **/*history*
-config/.config/nvim/plugged
-config/.config/coc/
 **/*zcompdump*
 config/.config/karabiner/assets
 config/.config/karabiner/automatic_backups
 config/.config/tmux/plugins
 config/.config/gh/hosts.yml
+config/.config/zsh/.zsh_sessions/
+os/macos/Brewfile.lock.json
