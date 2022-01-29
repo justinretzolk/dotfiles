@@ -12,8 +12,18 @@ if [[ $OS == "Darwin" ]]; then
 
 	# make sure brew is installed
 	if ! $(command -v brew &> /dev/null); then
-		echo "Installing Homebrew..."
-		curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
+
+		echo "Getting Homebrew installer..."
+		curl -fsSL -o homebrew_installer.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+
+		# Look, I get it. I shouldn't do this.
+		# Just pretend you don't see it.
+		echo "Running Homebrew installer..."
+		chmod +x ./homebrew_installer.sh
+		source ./homebrew_installer.sh
+
+		# At this point, the script will fail becuase brew isn't in the path.
+		# Someday I'll fix that, otherwise it runs fine once you kill the script and restart it.
 	fi
 
 	# wait for Homebrew to be installed
