@@ -14,3 +14,4 @@ config/.config/tmux/plugins
 config/.config/gh/hosts.yml
 config/.config/zsh/.zsh_sessions/
 os/macos/Brewfile.lock.json
+config/.config/nvim/plugin/
