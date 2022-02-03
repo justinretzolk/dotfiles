@@ -15,6 +15,9 @@ elif ( command -v vi > /dev/null 2>&1 ); then
   export VISUAL=${EDITOR}
 fi
 
+# tfswitch
+export PATH="${HOME}/bin:${PATH}"
+
 # oh-my-zsh
 plugins=(
 	terraform
