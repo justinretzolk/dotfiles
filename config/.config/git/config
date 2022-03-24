@@ -10,6 +10,9 @@
 [init]
   defaultBranch = "main"
 
+[alias]
+  pushd = "push -u origin HEAD"
+
 # GitHub specific configuration
 [includeIf "gitdir:**/github.com/**"]
 	path = ~/.config/git/github
