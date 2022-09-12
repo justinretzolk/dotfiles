@@ -84,7 +84,7 @@ cmp.setup {
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "bashls", "gopls", "jsonls", "sumneko_lua", "terraformls" }
+local servers = { "bashls", "gopls", "jsonls", "sumneko_lua", "terraformls", "tsserver" }
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup {
 		on_attach = on_attach,

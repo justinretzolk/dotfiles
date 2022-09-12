@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
 	-- utilities
 	use 'preservim/nerdtree' 				-- tree style directory navigation
 	use 'ntpeters/vim-better-whitespace' 	-- highlight whitespace
+	use 'ellisonleao/glow.nvim'             -- markdown preview with glow
 
 	-- theming
 	use 'vim-airline/vim-airline' 			-- status line
