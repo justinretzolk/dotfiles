@@ -1,5 +1,17 @@
 [user]
   name = Justin Retzolk
+  email = 44710313+justinretzolk@users.noreply.github.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFtsegOWQEKvu2rJdu54y75O9Mc8L/KFDan90wUMUDCL
+  useConfigOnly = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [diff]
   noprefix = true
@@ -10,15 +22,6 @@
 [init]
   defaultBranch = "main"
 
-[alias]
-  pushd = "push -u origin HEAD"
-
-# GitHub specific configuration
-[includeIf "gitdir:**/github.com/**"]
-	path = ~/.config/git/github
-[includeIf "gitdir:~/.dotfiles/**"]
-	path = ~/.config/git/github
-
 # Use SSH instead of HTTPS.
 [url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
