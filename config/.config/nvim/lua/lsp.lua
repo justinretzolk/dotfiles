@@ -113,5 +113,5 @@ require('nvim-treesitter.configs').setup {
 	},
 }
 
-local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
-parser_config.hcl.used_by = "terraform"
+local ft_to_parser = require('nvim-treesitter.parsers').filetype_to_parsername
+ft_to_parser.terraform = "hcl"
