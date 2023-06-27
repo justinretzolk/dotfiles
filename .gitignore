@@ -8,10 +8,10 @@
 ._*
 **/*history*
 **/*zcompdump*
-config/.config/karabiner/assets
-config/.config/karabiner/automatic_backups
-config/.config/tmux/plugins
-config/.config/gh/hosts.yml
-config/.config/zsh/.zsh_sessions/
+.config/karabiner/assets
+.config/karabiner/automatic_backups
+.config/tmux/plugins
+.config/gh/hosts.yml
+.config/zsh/.zsh_sessions/
+.config/zsh/custom/aws.zsh
 os/macos/Brewfile.lock.json
-config/.config/nvim/plugin/
