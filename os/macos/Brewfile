@@ -1,5 +1,4 @@
 # Tap
-tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'qmk/qmk'
 tap 'warrensbox/tap'
