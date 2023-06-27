@@ -1,9 +1,9 @@
-[submodule "config/.config/zsh/custom/plugins/zsh-syntax-highlighting"]
-	path = config/.config/zsh/custom/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "config/.config/zsh/oh-my-zsh"]
-	path = config/.config/zsh/oh-my-zsh
-	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "config/.config/tmux/plugins/tpm"]
-	path = config/.config/tmux/plugins/tpm
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".config/zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = .config/zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".config/zsh/oh-my-zsh"]
+	path = .config/zsh/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
