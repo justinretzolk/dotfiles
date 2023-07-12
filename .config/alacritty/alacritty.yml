@@ -22,7 +22,6 @@ font:
   glyph_offset:
     x: 0
     y: 0
-  use_thin_strokes: false
 live_config_reload: true
 colors:
   # Default colors
