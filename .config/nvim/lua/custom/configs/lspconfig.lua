@@ -7,8 +7,14 @@ local servers = { "bashls", "gopls", "jsonls", "lua_ls", "terraformls", "yamlls"
 
 -- general
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup { on_attach = on_attach, capabilities = capabilities }
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+  }
 end
+
+-- bash
+lspconfig.bashls.setup {}
 
 -- go
 lspconfig.gopls.setup {
@@ -21,7 +27,10 @@ lspconfig.gopls.setup {
   }
 }
 
--- lua_ls
+-- json
+lspconfig.jsonls.setup {}
+
+-- lua
 lspconfig.lua_ls.setup {
   settings = {
     Lua = {
@@ -33,7 +42,10 @@ lspconfig.lua_ls.setup {
   }
 }
 
--- yamlls
+-- terraform
+lspconfig.terraformls.setup {}
+
+-- yaml
 lspconfig.yamlls.setup {
   settings = {
     yaml = {

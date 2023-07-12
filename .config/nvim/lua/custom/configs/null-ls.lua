@@ -4,11 +4,17 @@ local format = null_ls.builtins.formatting
 
 local opts = {
   sources = {
-    format.fixjson, format.gofmt, format.goimports, format.lua_format,
-    format.terrafmt, format.terraform_fmt, format.trim_newlines,
-    format.trim_whitespace, format.yamlfmt
-    -- format.markdown_toc,
-    -- format.prettierd,
+    format.fixjson,
+    format.gofmt,
+    format.goimports,
+    format.markdown_toc,
+    format.prettierd,
+    format.terrafmt,
+    format.terraform_fmt,
+    format.trim_newlines,
+    format.trim_whitespace,
+    -- format.yamlfmt
+    -- format.lua_format,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
@@ -23,4 +29,5 @@ local opts = {
     end
   end
 }
+
 return opts
